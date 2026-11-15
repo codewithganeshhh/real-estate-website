@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import AdvisoryPillars from '../components/AdvisoryPillars';
 import CoreVerticals from '../components/CoreVerticals';
+import TestimonialsMarquee from '../components/TestimonialsMarquee';
 import { projectsData } from '../data/mockData';
 
 export default function HomePage() {
@@ -66,6 +67,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 5. Client Testimonials Infinite Marquee */}
+      <TestimonialsMarquee />
     </div>
   );
 }

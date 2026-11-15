@@ -91,7 +91,7 @@ export default function ContactPage() {
       <section className="py-14 sm:py-20 px-4 sm:px-6 md:px-12 max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">
           {/* Left Column: Interactive Form */}
-          <div className="lg:col-span-7 p-6 sm:p-8 md:p-10 rounded-2xl bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 shadow-lg">
+          <div className="lg:col-span-7 p-5 sm:p-8 md:p-10 rounded-2xl bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 shadow-lg">
             {submitted ? (
               <div className="py-16 text-center space-y-4 animate-fade-in">
                 <CheckCircle2 size={48} className="text-emerald mx-auto" />
@@ -201,14 +201,21 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-4 rounded-xl text-xs uppercase tracking-[0.25em] font-bold text-black bg-gradient-to-r from-gold via-gold-light to-gold hover:opacity-95 shadow-lg shadow-gold/20 transition-all flex items-center justify-center gap-2"
+                  className="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider sm:tracking-[0.18em] text-black bg-gradient-to-r from-gold via-gold-light to-gold hover:opacity-95 active:scale-[0.99] shadow-lg shadow-gold/25 transition-all duration-200 flex items-center justify-center gap-2.5 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed group"
                 >
                   {loading ? (
-                    <span>Submitting Message...</span>
+                    <span className="inline-flex items-center gap-2">
+                      <svg className="animate-spin h-4 w-4 text-black" viewBox="0 0 24 24" fill="none">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                      </svg>
+                      <span>Submitting...</span>
+                    </span>
                   ) : (
                     <>
-                      <Send size={15} />
-                      <span>Submit Inquiry to Kumar Construction</span>
+                      <Send size={15} className="shrink-0 transition-transform group-hover:translate-x-0.5" />
+                      <span className="sm:hidden">Send Inquiry</span>
+                      <span className="hidden sm:inline">Submit Inquiry to Kumar Construction</span>
                     </>
                   )}
                 </button>
