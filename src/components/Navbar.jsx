@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import BrandLogo from './BrandLogo';
+import { companyInfo } from '../data/mockData';
 
 export default function Navbar({ darkMode, setDarkMode }) {
   const [scrolled, setScrolled] = useState(false);
@@ -140,13 +141,13 @@ export default function Navbar({ darkMode, setDarkMode }) {
             </span>
             <div className="grid grid-cols-2 gap-3">
               <a
-                href="tel:+918041234567"
+                href={`tel:${companyInfo.phone}`}
                 className="py-3 px-4 rounded-xl bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-xs text-center text-gray-900 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-white/10 transition-colors"
               >
                 Call Desk
               </a>
               <a
-                href="https://wa.me/918041234567"
+                href="https://wa.me/919071279996"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-3 px-4 rounded-xl bg-emerald/15 border border-emerald/30 text-xs text-center text-emerald font-semibold hover:bg-emerald/25 transition-colors"
@@ -155,7 +156,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               </a>
             </div>
             <p className="text-[11px] text-gray-500 text-center font-mono pt-2">
-              BLR HQ • JSR Regional Operations
+              Corporate Headquarters • Ranchi, Jharkhand
             </p>
           </div>
         </div>

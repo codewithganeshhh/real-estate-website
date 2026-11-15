@@ -2,9 +2,10 @@ export const companyInfo = {
   name: "Kumar Construction",
   tagline: "Building Future-Ready Infrastructure. Creating Enduring Value.",
   established: 2023,
-  location: "Jamshedpur, Jharkhand & Bengaluru, Karnataka",
-  address: "#104/9, Mallappa Tower, E Park Road, 8th Cross, Malleshwaram, Bangalore – 560003",
-  jamshedpurOffice: "Main Road, Bistupur, Jamshedpur, Jharkhand – 831001",
+  owner: "Praful Kumar Sahu",
+  location: "Ranchi, Jharkhand",
+  address: "301, Prathna Heights, Ratu Road Chowk, Ranchi, Jharkhand – 834001",
+  headOffice: "301, Prathna Heights, Ratu Road Chowk, Ranchi, Jharkhand – 834001",
   phone: "+91 90712 79996",
   email: "enquiries@kumarconstruction.in",
   workingHours: "Mon - Sat: 9:00 AM - 6:30 PM IST",
@@ -45,7 +46,7 @@ export const coreVerticals = [
     title: "Market",
     subtitle: "Entry",
     tagline: "Strategic market expansion for regional and NRI investors",
-    description: "Bespoke market entry roadmaps, joint venture structuring, and regulatory navigation for developers entering South Indian markets.",
+    description: "Bespoke market entry roadmaps, joint venture structuring, and regulatory navigation for developers entering regional and national markets.",
     image: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?q=80&w=1200&auto=format&fit=crop"
   },
   {
@@ -90,7 +91,7 @@ export const projectsData = [
     category: "Residential",
     stage: "Planning",
     client: "Sea2Sky",
-    location: "Magadi Road, Bengaluru",
+    location: "Ranchi, Jharkhand",
     scale: "62 Exclusive Units",
     isFlagship: false,
     tagline: "62 Eco-friendly luxury villas designed for privacy and sustainable living.",
@@ -166,18 +167,11 @@ export const servicesData = [
 
 export const leadershipData = [
   {
-    name: "Mr. Abdulla Kunhi, CA",
-    role: "Director & Senior Strategic Advisor",
-    bio: "Mr. Abdulla Kunhi, CA is a strategic investor with over 20 years of international business expertise, particularly in cross-border commerce, agricultural exports, and large-scale real estate. His seasoned leadership reflects an unwavering focus on disciplined execution, sustainable growth, and generational asset value.",
+    name: "Praful Kumar Sahu",
+    role: "Founder & Managing Director",
+    bio: "Praful Kumar Sahu is the visionary founder and sole owner of Kumar Construction, leading the firm with uncompromising dedication to engineering excellence, structural integrity, and transparent project delivery. Based in Ranchi, Jharkhand, his hands-on leadership spans turnkey civil engineering, high-rise residential & commercial developments, and sustainable infrastructure across the region.",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop",
-    credentials: ["Chartered Accountant (CA)", "20+ Yrs Global Commerce", "Infrastructure & Land Banking Specialist"]
-  },
-  {
-    name: "Mrs. Mariambi Abdulla",
-    role: "Director — Governance & Sustainability",
-    bio: "Mrs. Mariambi Abdulla brings thoughtful leadership, ethical stewardship, and a long-term investment horizon to Kumar Construction. She actively guides the organization's commitments to sustainable development, corporate transparency, community enrichment, and enduring stakeholder value.",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop",
-    credentials: ["Executive Board Director", "Sustainable Communities Lead", "Corporate Ethics & Governance"]
+    credentials: ["Founder & Sole Owner", "Turnkey Civil Infrastructure Specialist", "RERA & Municipal Diligence Lead"]
   }
 ];
 
@@ -188,7 +182,7 @@ export const legalPolicies = {
   },
   terms: {
     title: "Terms & Conditions",
-    content: `By accessing this website, you agree to these Terms and Conditions.\n\n1. Advisory Nature: All content, case studies, and visuals are for general informational purposes and showcase Kumar Construction's engineering capabilities.\n\n2. Intellectual Property: Content and logos are the property of Kumar Construction.\n\n3. Jurisdiction: Governed by the laws of India with jurisdiction in Bengaluru.`
+    content: `By accessing this website, you agree to these Terms and Conditions.\n\n1. Advisory Nature: All content, case studies, and visuals are for general informational purposes and showcase Kumar Construction's engineering capabilities.\n\n2. Intellectual Property: Content and logos are the property of Kumar Construction.\n\n3. Jurisdiction: Governed by the laws of India with jurisdiction in Ranchi, Jharkhand.`
   },
   refund: {
     title: "Refund Policy",

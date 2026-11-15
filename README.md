@@ -15,12 +15,12 @@ A clean, high-performance, ultra-luxury multi-page **React (React Router v6) + T
 2. **About Us (`/about`)**:
    - Dedicated page with architectural hero banner.
    - "The Firm - Bridging Capital & Execution - Redefining Real Value".
-   - Our Origins (Est. 2023, Bengaluru HQ) & The Vision.
-   - Leadership profiles: **Mr. Abdulla Kunhi, CA** & **Mrs. Mariambi Abdulla**.
+   - Our Origins (Est. 2023, Ranchi HQ) & The Vision.
+   - Leadership profile: **Praful Kumar Sahu** (Founder & Managing Director).
 
 3. **Projects Portfolio (`/projects`)**:
    - Dedicated portfolio page with landmark development showcases.
-   - Full cards for **Nirvana Valley** (200 Acres, Nilambur) and **Skygarden Villas** (62 Eco-luxury villas, Magadi Road).
+   - Full cards for **Nirvana Valley** (200 Acres, Nilambur) and **Skygarden Villas** (62 Eco-luxury villas, Ranchi).
    - "View Case Study" direct navigation links.
 
 4. **Project Case Study Detail (`/projects/:id`)**:
@@ -35,7 +35,7 @@ A clean, high-performance, ultra-luxury multi-page **React (React Router v6) + T
 
 6. **Contact Us (`/contact`)**:
    - Dedicated inquiry desk page with pre-fillable URL parameter support (`?service=...&duration=...&project=...`).
-   - Form with real-time feedback and Bangalore headquarters office details.
+   - Form with real-time feedback and Ranchi corporate headquarters office details (301, Prathna Heights, Ratu Road Chowk, Ranchi).
 
 ---
 

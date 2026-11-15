@@ -80,7 +80,7 @@ export default function ContactPage() {
             <div className="flex items-center gap-4 animate-hero-subtitle">
               <div className="w-12 h-px bg-gold inline-block" />
               <p className="text-base sm:text-lg text-gray-200 font-light tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-                Bengaluru HQ &amp; Jamshedpur Regional Hub
+                Corporate Headquarters: Ratu Road Chowk, Ranchi, Jharkhand
               </p>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function ContactPage() {
                     <option value="Investment & Capital Advisory" className="bg-white dark:bg-[#141414] text-gray-900 dark:text-white">Investment &amp; Capital Advisory</option>
                     <option value="International Market Entry & Expansion" className="bg-white dark:bg-[#141414] text-gray-900 dark:text-white">International Market Entry &amp; Expansion</option>
                     <option value="Turnkey Construction Mandate" className="bg-white dark:bg-[#141414] text-gray-900 dark:text-white">Turnkey Construction Mandate</option>
-                    <option value="Jamshedpur Regional Project" className="bg-white dark:bg-[#141414] text-gray-900 dark:text-white">Jamshedpur Regional Project</option>
+                    <option value="Ranchi & Regional Infrastructure Project" className="bg-white dark:bg-[#141414] text-gray-900 dark:text-white">Ranchi &amp; Regional Infrastructure Project</option>
                   </select>
                 </div>
 
@@ -218,55 +218,38 @@ export default function ContactPage() {
 
           {/* Right Column: Office Cards & Quick Action Buttons */}
           <div className="lg:col-span-5 space-y-6">
-            {/* Jamshedpur Office Card */}
+            {/* Ranchi Corporate Headquarters Card */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white dark:bg-[#0D0D0D] border-2 border-gold/40 hover:border-gold shadow-sm hover:shadow-xl relative overflow-hidden group hover:-translate-y-1.5 transition-all duration-300">
               <div className="flex items-start gap-4">
                 {/* Outline icon that fills and glows on hover */}
                 <div className="w-13 h-13 rounded-2xl border border-gray-200 bg-gray-100/80 text-gray-600 dark:border-white/15 dark:bg-white/[0.03] dark:text-gray-400 group-hover:bg-gradient-to-br group-hover:from-amber-400/25 group-hover:to-amber-600/10 group-hover:border-amber-400 group-hover:text-amber-500 group-hover:shadow-[0_0_20px_rgba(245,158,11,0.35)] flex items-center justify-center shrink-0 transition-all duration-300">
-                  <MapPin size={22} className="fill-transparent group-hover:fill-amber-400/50 group-hover:scale-110 transition-all duration-300" />
+                  <Building2 size={22} className="fill-transparent group-hover:fill-amber-400/50 group-hover:scale-110 transition-all duration-300" />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-[10px] uppercase font-bold tracking-widest text-gold-dark dark:text-gold bg-gold/10 px-2 py-0.5 rounded border border-gold/30">
-                      Regional Operations Hub
+                      Corporate Headquarters
                     </span>
                   </div>
                   <h4 className="text-xl font-serif text-gray-950 dark:text-white mb-2 group-hover:text-gold-dark dark:group-hover:text-gold transition-colors">
-                    Jamshedpur Office
+                    Ranchi Head Office
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300 font-light leading-snug mb-3">
-                    {companyInfo.jamshedpurOffice}
+                    {companyInfo.address}
+                  </p>
+                  <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">
+                    <span className="text-gray-500 dark:text-gray-400 font-normal">Founder & Managing Director: </span>
+                    <strong className="text-gray-900 dark:text-white font-medium">{companyInfo.owner}</strong>
                   </p>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Bistupur+Jamshedpur+Jharkhand"
+                    href="https://www.google.com/maps/search/?api=1&query=Prathna+Heights+Ratu+Road+Chowk+Ranchi+Jharkhand"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs text-gold-dark dark:text-gold hover:underline font-medium"
                   >
-                    <span>View Jamshedpur Map</span>
+                    <span>View Ranchi Map</span>
                     <ExternalLink size={12} />
                   </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Bengaluru Corporate Headquarters Card */}
-            <div className="p-6 sm:p-7 rounded-2xl bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 hover:border-emerald-400/50 shadow-sm hover:shadow-xl group hover:-translate-y-1.5 transition-all duration-300">
-              <div className="flex items-start gap-4">
-                {/* Outline icon that fills and glows on hover */}
-                <div className="w-13 h-13 rounded-2xl border border-gray-200 bg-gray-100/80 text-gray-600 dark:border-white/15 dark:bg-white/[0.03] dark:text-gray-400 group-hover:bg-gradient-to-br group-hover:from-emerald-400/25 group-hover:to-emerald-600/10 group-hover:border-emerald-400 group-hover:text-emerald-500 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.35)] flex items-center justify-center shrink-0 transition-all duration-300">
-                  <Building2 size={22} className="fill-transparent group-hover:fill-emerald-400/50 group-hover:scale-110 transition-all duration-300" />
-                </div>
-                <div>
-                  <span className="text-[10px] uppercase font-mono tracking-widest text-emerald-700 dark:text-emerald block mb-1">
-                    Corporate Headquarters
-                  </span>
-                  <h4 className="text-xl font-serif text-gray-950 dark:text-white mb-2 group-hover:text-emerald-700 dark:group-hover:text-emerald transition-colors">
-                    Bengaluru Office
-                  </h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 font-light leading-snug">
-                    {companyInfo.address}
-                  </p>
                 </div>
               </div>
             </div>
@@ -328,23 +311,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Interactive Jamshedpur Google Map Section */}
+      {/* Interactive Ranchi Google Map Section */}
       <section className="py-10 sm:py-12 px-4 sm:px-6 md:px-12 max-w-[1280px] mx-auto">
         <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-3 sm:gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1.5 sm:mb-2">
               <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
               <p className="text-xs uppercase tracking-[0.25em] text-gold-dark dark:text-gold font-semibold font-mono">
-                On-Ground Presence
+                Corporate Headquarters
               </p>
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-gray-950 dark:text-white">
-              Jamshedpur Location Map
+              Ranchi Head Office Map
             </h2>
           </div>
 
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Bistupur+Jamshedpur+Jharkhand"
+            href="https://www.google.com/maps/search/?api=1&query=Prathna+Heights+Ratu+Road+Chowk+Ranchi+Jharkhand"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-emerald-700 dark:text-emerald hover:underline transition-colors font-medium"
@@ -357,8 +340,8 @@ export default function ContactPage() {
         {/* Embedded Map Frame */}
         <div className="relative w-full h-[320px] sm:h-[450px] md:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden border border-gray-200 dark:border-white/15 shadow-xl bg-gray-100 dark:bg-[#111]">
           <iframe
-            title="Kumar Construction Jamshedpur Map"
-            src="https://maps.google.com/maps?q=Bistupur,%20Jamshedpur,%20Jharkhand,%20India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            title="Kumar Construction Ranchi Head Office Map"
+            src="https://maps.google.com/maps?q=Ratu%20Road%20Chowk,%20Ranchi,%20Jharkhand,%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -377,10 +360,10 @@ export default function ContactPage() {
               </span>
             </div>
             <p className="text-xs text-gray-950 dark:text-white font-medium mb-1">
-              Jamshedpur Regional Office
+              Ranchi Corporate Headquarters
             </p>
             <p className="text-[11px] text-gray-600 dark:text-gray-300 font-light leading-snug">
-              Main Road, Bistupur, Jamshedpur, Jharkhand – 831001
+              301, Prathna Heights, Ratu Road Chowk, Ranchi, Jharkhand – 834001
             </p>
           </div>
         </div>
@@ -388,7 +371,7 @@ export default function ContactPage() {
         {/* Mobile Address Pill below Map */}
         <div className="mt-3 p-3.5 rounded-xl bg-white dark:bg-black/80 border border-gray-200 dark:border-gold/30 shadow-sm flex items-center gap-2.5 sm:hidden">
           <MapPin size={16} className="text-gold-dark dark:text-gold shrink-0" />
-          <span className="text-xs text-gray-800 dark:text-gray-300 font-light">Main Road, Bistupur, Jamshedpur, Jharkhand – 831001</span>
+          <span className="text-xs text-gray-800 dark:text-gray-300 font-light">301, Prathna Heights, Ratu Road Chowk, Ranchi, Jharkhand – 834001</span>
         </div>
       </section>
     </div>

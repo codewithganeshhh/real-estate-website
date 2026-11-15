@@ -136,7 +136,7 @@ export default function AboutPage() {
                 OUR ORIGINS
               </h3>
               <p className="leading-relaxed">
-                Established in 2023, <strong className="text-gray-950 dark:text-white font-medium">Kumar Construction</strong> is headquartered in Bengaluru with dedicated regional execution operations in Jamshedpur. We operate with a singular focus: <span className="text-gray-950 dark:text-white font-medium">value creation</span>. We are a specialist infrastructure advisory and turnkey construction firm, guiding clients through every stage of development — from concept to completion.
+                Established in 2023, <strong className="text-gray-950 dark:text-white font-medium">Kumar Construction</strong> is headquartered in Ranchi, Jharkhand at 301, Prathna Heights, Ratu Road Chowk. Founded by sole owner and Managing Director <strong className="text-gray-950 dark:text-white font-medium">Praful Kumar Sahu</strong>, we operate with a singular focus: <span className="text-gray-950 dark:text-white font-medium">value creation</span>. We are a specialist infrastructure and turnkey civil engineering firm, guiding clients through every stage of development — from concept to completion.
               </p>
             </div>
 
@@ -145,7 +145,7 @@ export default function AboutPage() {
                 THE VISION
               </h3>
               <p className="leading-relaxed">
-                By combining deep technical engineering expertise with strategic advisory capabilities, we help clients plan, structure, and execute infrastructure projects with confidence. We deliver guidance, not just reports.
+                By combining deep technical engineering expertise with disciplined execution capabilities, we help clients plan, structure, and execute landmark infrastructure projects with confidence. We deliver quality construction and honest guidance, not just reports.
               </p>
             </div>
 
@@ -161,10 +161,10 @@ export default function AboutPage() {
               </div>
               <div>
                 <span className="block text-3xl sm:text-4xl font-serif text-emerald-700 dark:text-emerald mb-1.5 font-bold">
-                  BLR &amp; JSR
+                  RNC
                 </span>
                 <span className="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 font-mono">
-                  Dual Operating Hubs
+                  Ranchi Headquarters
                 </span>
               </div>
             </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3. Executive Governance / Leadership (Exact Reference Style) */}
+      {/* 3. Executive Governance / Leadership (Sole Owner: Praful Kumar Sahu) */}
       <section className="py-20 sm:py-28 relative overflow-hidden border-t border-gray-200 dark:border-white/5 bg-gray-50/50 dark:bg-transparent">
         {/* Subtle ambient glow spots */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald/5 blur-[120px] rounded-full pointer-events-none" />
@@ -184,15 +184,15 @@ export default function AboutPage() {
               Leadership
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-xl text-base sm:text-lg font-light leading-relaxed">
-              Guided by decades of experience in finance, international commerce, and heavy construction engineering.
+              Guided by the hands-on vision and structural engineering commitment of Founder &amp; Sole Owner Praful Kumar Sahu.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="max-w-2xl">
             {leadershipData.map((leader, idx) => (
               <div
                 key={idx}
-                className="group relative p-6 sm:p-10 bg-white dark:bg-[#0D0D0D]/90 border border-gray-200 dark:border-white/10 rounded-2xl sm:rounded-3xl hover:border-gold/50 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500"
+                className="group relative p-8 sm:p-12 bg-white dark:bg-[#0D0D0D]/90 border border-gray-200 dark:border-white/10 rounded-2xl sm:rounded-3xl hover:border-gold/50 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500"
               >
                 <div className="w-16 h-1 bg-gold mb-6 origin-left transform group-hover:scale-x-150 transition-transform duration-500" />
                 <h3 className="text-2xl sm:text-3xl font-serif text-gray-950 dark:text-white mb-2 group-hover:text-gold transition-colors duration-300">

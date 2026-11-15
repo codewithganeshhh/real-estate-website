@@ -27,7 +27,7 @@ export default function AboutSection() {
             Our Origins
           </h3>
           <p className="text-sm sm:text-base text-gray-300 font-light leading-relaxed">
-            Established in 2023, <strong className="text-white font-medium">Kumar Construction</strong> is headquartered in Bengaluru. We operate with a singular focus: <strong className="text-white font-medium">value creation</strong>. We are a specialist infrastructure and turnkey construction firm, guiding clients through every stage of development — from concept to completion.
+            Established in 2023, <strong className="text-white font-medium">Kumar Construction</strong> is headquartered in Ranchi, Jharkhand. We operate with a singular focus: <strong className="text-white font-medium">value creation</strong>. We are a specialist infrastructure and turnkey construction firm, guiding clients through every stage of development — from concept to completion.
           </p>
         </div>
 
@@ -44,8 +44,8 @@ export default function AboutSection() {
               <span className="text-gray-400">Established</span>
             </div>
             <div className="border-l border-white/10 pl-10">
-              <span className="block text-2xl font-serif font-bold text-emerald">BLR</span>
-              <span className="text-gray-400">Headquarters</span>
+              <span className="block text-2xl font-serif font-bold text-emerald">RNC</span>
+              <span className="text-gray-400">Ranchi Headquarters</span>
             </div>
           </div>
         </div>
