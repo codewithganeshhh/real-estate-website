@@ -182,11 +182,8 @@ export const testimonialsData = [
     role: "Managing Director",
     company: "Sahay Commercial Hub",
     location: "Ranchi, Jharkhand",
-    tag: "Commercial Infrastructure",
-    project: "Ratu Road Commercial Complex",
     quote: "Kumar Construction has set a new benchmark in Ranchi. Their turnkey execution of our commercial facility near Ratu Road was delivered ahead of schedule with institutional-grade structural finishing. Praful Kumar Sahu's direct oversight and transparent milestone reporting made all the difference.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop"
+    rating: 5
   },
   {
     id: "testimonial-2",
@@ -194,11 +191,8 @@ export const testimonialsData = [
     role: "Resident & Villa Owner",
     company: "Skygarden Villas",
     location: "Ranchi, Jharkhand",
-    tag: "Existing Project",
-    project: "Skygarden Villas",
     quote: "Living at Skygarden Villas in Ranchi has been an extraordinary experience. The biophilic architecture, vertical garden integration, and acoustic insulation surpass anything we've seen in East India. Truly unmatched craftsmanship and sustainable engineering.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
+    rating: 5
   },
   {
     id: "testimonial-3",
@@ -206,11 +200,8 @@ export const testimonialsData = [
     role: "Chairman & Managing Director",
     company: "Singh Heavy Logistics & Warehousing",
     location: "Jamshedpur, Jharkhand",
-    tag: "Industrial Infrastructure",
-    project: "Jharkhand Logistics Corridor",
     quote: "For our multi-acre logistics facility in Jharkhand, Kumar Construction provided immaculate geotechnical diligence, earthquake-resistant framing, and heavy-duty industrial flooring. Their engineering precision, safety protocols, and integrity are exemplary.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop"
+    rating: 5
   },
   {
     id: "testimonial-4",
@@ -218,11 +209,8 @@ export const testimonialsData = [
     role: "Early Investor & Mansion Owner",
     company: "Nirvana Valley Township",
     location: "Nilambur, Kerala",
-    tag: "Flagship Project",
-    project: "Nirvana Valley",
     quote: "Investing in a 200-acre golf estate like Nirvana Valley required an infrastructure team with global standards. Kumar Construction's masterplanning advisory, environmental compliance, and turnkey execution transformed our vision into an architectural masterpiece.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop"
+    rating: 5
   },
   {
     id: "testimonial-5",
@@ -230,11 +218,8 @@ export const testimonialsData = [
     role: "Director",
     company: "Agarwal Greens & Urban Living",
     location: "Bokaro Steel City, Jharkhand",
-    tag: "Residential Development",
-    project: "Bokaro Greens High-Rise",
     quote: "Collaborating with Kumar Construction on high-rise residential engineering in Jharkhand was completely seamless. Their strict adherence to RERA compliance, RCC structural safety standards, and timely handover is second to none.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop"
+    rating: 5
   }
 ];
 

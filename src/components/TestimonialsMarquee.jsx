@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Quote, MapPin, Sparkles, Building } from 'lucide-react';
+import { Star, Quote, MapPin, Sparkles, User } from 'lucide-react';
 import { testimonialsData } from '../data/mockData';
 
 export default function TestimonialsMarquee() {
@@ -9,7 +9,7 @@ export default function TestimonialsMarquee() {
   return (
     <section className="py-16 sm:py-24 bg-gray-50 dark:bg-[#070707] relative overflow-hidden w-full max-w-full border-t border-b border-gray-200 dark:border-white/5 transition-colors duration-300">
       {/* Section Header */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 mb-10 sm:mb-14 flex flex-col sm:flex-row justify-between sm:items-end gap-3 sm:gap-4">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 mb-8 sm:mb-10 flex flex-col sm:flex-row justify-between sm:items-end gap-3 sm:gap-4">
         <div>
           <div className="flex items-center gap-2 mb-2">
             <Sparkles size={14} className="text-gold-dark dark:text-gold" />
@@ -33,99 +33,64 @@ export default function TestimonialsMarquee() {
         </div>
       </div>
 
-      {/* Infinite Marquee Track Container */}
+      {/* Infinite Marquee Track Container with vertical padding to prevent hover top cut-off */}
       <div className="relative w-full max-w-full overflow-hidden">
         {/* Soft edge blur fades on left & right adapting to light and dark theme */}
         <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 sm:w-20 md:w-32 bg-gradient-to-r from-gray-50 dark:from-[#070707] to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 sm:w-20 md:w-32 bg-gradient-to-l from-gray-50 dark:from-[#070707] to-transparent z-10" />
 
-        {/* Marquee Track */}
-        <div className="animate-marquee-track flex gap-4 sm:gap-6 pb-4">
-          {marqueeCards.map((item, idx) => {
-            const isExistingProject = item.tag === 'Existing Project' || item.tag === 'Flagship Project';
+        {/* Marquee Track: pt-6 pb-8 gives ample headroom so cards NEVER get clipped when hovered */}
+        <div className="animate-marquee-track flex gap-4 sm:gap-6 pt-6 pb-8">
+          {marqueeCards.map((item, idx) => (
+            <div
+              key={`${item.id}-${idx}`}
+              className="w-[300px] sm:w-[380px] md:w-[420px] rounded-2xl bg-white dark:bg-[#0E0E0E] border border-gray-200/80 dark:border-white/10 p-6 sm:p-7 shrink-0 shadow-sm hover:shadow-2xl hover:border-gold/70 dark:hover:border-gold/60 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 relative cursor-default"
+            >
+              {/* Subtle elegant quotation mark in top-right */}
+              <div className="absolute top-6 right-6 text-gray-200 dark:text-white/10 pointer-events-none transition-colors group-hover:text-gold/25">
+                <Quote size={32} className="stroke-[1.5]" />
+              </div>
 
-            return (
-              <div
-                key={`${item.id}-${idx}`}
-                className="w-[300px] sm:w-[380px] md:w-[420px] rounded-2xl bg-white dark:bg-[#0E0E0E] border border-gray-200/80 dark:border-white/10 p-5 sm:p-7 shrink-0 shadow-sm hover:shadow-xl hover:border-gold/60 dark:hover:border-gold/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 relative"
-              >
-                {/* Decorative subtle quotation mark in top-right */}
-                <div className="absolute top-5 right-5 text-gray-200 dark:text-white/5 pointer-events-none transition-colors group-hover:text-gold/20">
-                  <Quote size={40} className="stroke-[1.5]" />
-                </div>
-
-                <div>
-                  {/* Rating Stars & Category Tag */}
-                  <div className="flex items-center justify-between gap-2 mb-4">
-                    <div className="flex items-center gap-1">
-                      {[...Array(item.rating)].map((_, i) => (
-                        <Star
-                          key={i}
-                          size={14}
-                          className="fill-amber-400 text-amber-400 shrink-0"
-                        />
-                      ))}
-                    </div>
-
-                    <span
-                      className={`text-[10px] uppercase font-mono tracking-wider font-semibold px-2.5 py-0.5 rounded-full border ${
-                        isExistingProject
-                          ? 'bg-emerald/10 text-emerald-700 dark:text-emerald border-emerald/30'
-                          : 'bg-gold/10 text-gold-dark dark:text-gold border-gold/30'
-                      }`}
-                    >
-                      {item.tag}
-                    </span>
-                  </div>
-
-                  {/* Testimonial Quote */}
-                  <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 font-light leading-relaxed mb-6 italic">
-                    "{item.quote}"
-                  </p>
-                </div>
-
-                {/* Author Info */}
-                <div className="pt-4 border-t border-gray-100 dark:border-white/10 flex items-center gap-3.5">
-                  <div className="relative shrink-0">
-                    <img
-                      src={item.avatar}
-                      alt={item.name}
-                      className="w-11 h-11 rounded-full object-cover border-2 border-gold/40 group-hover:border-gold transition-colors"
-                      loading="lazy"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextElementSibling.style.display = 'flex';
-                      }}
+              <div>
+                {/* 5 Gold Rating Stars */}
+                <div className="flex items-center gap-1.5 mb-4">
+                  {[...Array(item.rating)].map((_, i) => (
+                    <Star
+                      key={i}
+                      size={15}
+                      className="fill-amber-400 text-amber-400 shrink-0"
                     />
-                    {/* Fallback Initials Avatar if image fails */}
-                    <div
-                      style={{ display: 'none' }}
-                      className="w-11 h-11 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 border-2 border-gold/40 items-center justify-center text-xs font-bold font-serif text-gold-dark dark:text-gold"
-                    >
-                      {item.name
-                        .split(' ')
-                        .map((n) => n[0])
-                        .slice(0, 2)
-                        .join('')}
-                    </div>
-                  </div>
+                  ))}
+                </div>
 
-                  <div className="min-w-0 flex-1">
-                    <h4 className="text-sm font-serif font-semibold text-gray-950 dark:text-white truncate group-hover:text-gold-dark dark:group-hover:text-gold transition-colors">
-                      {item.name}
-                    </h4>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400 font-light truncate">
-                      {item.role} • <span className="text-gray-700 dark:text-gray-300">{item.company}</span>
-                    </p>
-                    <div className="flex items-center gap-1 text-[11px] font-mono text-emerald-700 dark:text-emerald mt-0.5">
-                      <MapPin size={11} className="shrink-0" />
-                      <span className="truncate">{item.location}</span>
-                    </div>
+                {/* Testimonial Quote */}
+                <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 font-light leading-relaxed mb-6 italic">
+                  "{item.quote}"
+                </p>
+              </div>
+
+              {/* Author Info with Default Character Avatar */}
+              <div className="pt-4 border-t border-gray-100 dark:border-white/10 flex items-center gap-3.5">
+                {/* Default Character Avatar Icon */}
+                <div className="w-11 h-11 rounded-full bg-gray-100 dark:bg-white/[0.06] border border-gray-300 dark:border-white/15 group-hover:border-gold/70 dark:group-hover:border-gold/60 flex items-center justify-center text-gray-600 dark:text-gray-300 group-hover:text-gold-dark dark:group-hover:text-gold transition-all duration-300 shrink-0 shadow-sm">
+                  <User size={20} className="stroke-[1.8]" />
+                </div>
+
+                <div className="min-w-0 flex-1">
+                  <h4 className="text-sm font-serif font-semibold text-gray-950 dark:text-white truncate group-hover:text-gold-dark dark:group-hover:text-gold transition-colors">
+                    {item.name}
+                  </h4>
+                  <p className="text-[11px] text-gray-500 dark:text-gray-400 font-light truncate">
+                    {item.role} • <span className="text-gray-700 dark:text-gray-300">{item.company}</span>
+                  </p>
+                  <div className="flex items-center gap-1 text-[11px] font-mono text-emerald-700 dark:text-emerald mt-0.5">
+                    <MapPin size={11} className="shrink-0" />
+                    <span className="truncate">{item.location}</span>
                   </div>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>
