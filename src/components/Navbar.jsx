@@ -30,13 +30,16 @@ export default function Navbar({ darkMode, setDarkMode }) {
     return location.pathname.startsWith(path);
   };
 
+  // On home page when not scrolled, navbar sits directly over the dark video hero
+  const isTransparentOverDark = !scrolled && location.pathname === '/';
+
   return (
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled || location.pathname !== '/'
             ? 'py-4 bg-white/95 dark:bg-black/90 backdrop-blur-md border-b border-gray-200 dark:border-white/5 shadow-md dark:shadow-2xl'
-            : 'py-6 sm:py-8 bg-transparent'
+            : 'py-6 sm:py-8 bg-gradient-to-b from-black/80 via-black/40 to-transparent'
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 flex justify-between items-center">
@@ -46,25 +49,36 @@ export default function Navbar({ darkMode, setDarkMode }) {
             onClick={() => setMobileMenuOpen(false)}
             className="text-left"
           >
-            <BrandLogo />
+            <BrandLogo lightOnDark={isTransparentOverDark} />
           </Link>
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-1 lg:gap-3">
             {navLinks.map((link) => {
               const active = isActive(link.path);
+
+              const linkClasses = isTransparentOverDark
+                ? active
+                  ? 'text-white font-bold'
+                  : 'text-white/80 hover:text-gold'
+                : active
+                  ? 'text-gray-950 dark:text-white font-bold'
+                  : 'text-gray-700 dark:text-white/80 hover:text-gold-dark dark:hover:text-gold';
+
+              const indicatorClasses = isTransparentOverDark
+                ? 'bg-gold'
+                : 'bg-emerald';
+
               return (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`group text-xs uppercase tracking-[0.2em] font-medium transition-all duration-300 hover:text-emerald px-3 py-1 ${
-                    active ? 'text-gray-950 dark:text-white font-bold' : 'text-gray-700 dark:text-white/80'
-                  }`}
+                  className={`group text-xs uppercase tracking-[0.2em] font-medium transition-all duration-300 px-3 py-1 ${linkClasses}`}
                 >
                   <div className="flex flex-col items-center">
                     <span>{link.label}</span>
                     <span
-                      className={`h-[2px] bg-emerald mt-1 transition-all duration-300 ${
+                      className={`h-[2px] ${indicatorClasses} mt-1 transition-all duration-300 ${
                         active ? 'w-full' : 'w-0 group-hover:w-1/2'
                       }`}
                     />
@@ -76,7 +90,11 @@ export default function Navbar({ darkMode, setDarkMode }) {
             {/* Theme Toggle Button */}
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full transition-colors text-gray-800 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 ml-2"
+              className={`p-2 rounded-full transition-colors ml-2 ${
+                isTransparentOverDark
+                  ? 'text-white hover:text-gold hover:bg-white/10'
+                  : 'text-gray-800 dark:text-white hover:bg-black/5 dark:hover:bg-white/10'
+              }`}
               aria-label="Toggle Theme"
             >
               {darkMode ? <Sun size={18} /> : <Moon size={18} />}
@@ -87,14 +105,22 @@ export default function Navbar({ darkMode, setDarkMode }) {
           <div className="md:hidden flex items-center gap-2">
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="text-gray-800 dark:text-white p-1.5 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+              className={`p-1.5 rounded-lg transition-colors ${
+                isTransparentOverDark
+                  ? 'text-white hover:bg-white/10'
+                  : 'text-gray-800 dark:text-white hover:bg-black/5 dark:hover:bg-white/10'
+              }`}
               aria-label="Toggle Theme"
             >
               {darkMode ? <Sun size={18} /> : <Moon size={18} />}
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-800 dark:text-white focus:outline-none p-1.5 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+              className={`focus:outline-none p-1.5 rounded-lg transition-colors ${
+                isTransparentOverDark
+                  ? 'text-white hover:bg-white/10'
+                  : 'text-gray-800 dark:text-white hover:bg-black/5 dark:hover:bg-white/10'
+              }`}
               aria-label="Menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function BrandLogo({ size = "default", showSubtitle = true }) {
+export default function BrandLogo({ size = "default", showSubtitle = true, lightOnDark = false }) {
   // Dimension classes based on size prop
   const iconSize = size === "small" ? "w-7 h-7 sm:w-8 sm:h-8" : size === "large" ? "w-11 h-11 sm:w-12 sm:h-12" : "w-9 h-9 sm:w-10 sm:h-10";
   const titleText = size === "small" ? "text-sm sm:text-base" : size === "large" ? "text-xl sm:text-2xl" : "text-base sm:text-xl";
@@ -60,7 +60,11 @@ export default function BrandLogo({ size = "default", showSubtitle = true }) {
           KUMAR CONSTRUCTION
         </span>
         {showSubtitle && (
-          <span className={`${subText} uppercase tracking-[0.22em] sm:tracking-[0.28em] text-gray-500 dark:text-gray-400 font-mono font-medium mt-1`}>
+          <span
+            className={`${subText} uppercase tracking-[0.22em] sm:tracking-[0.28em] font-mono font-medium mt-1 ${
+              lightOnDark ? 'text-gray-300 drop-shadow' : 'text-gray-500 dark:text-gray-400'
+            }`}
+          >
             Infrastructure &amp; Developments
           </span>
         )}
