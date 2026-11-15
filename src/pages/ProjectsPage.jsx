@@ -37,8 +37,8 @@ export default function ProjectsPage() {
       </section>
 
       {/* Projects Grid */}
-      <section className="py-14 sm:py-24 px-4 sm:px-6 md:px-12 max-w-[1280px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
+      <section className="py-14 sm:py-24 px-4 sm:px-6 md:px-12 max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projectsData.map((project) => (
             <div
               key={project.id}
@@ -49,6 +49,10 @@ export default function ProjectsPage() {
                   src={project.heroImage}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop";
+                  }}
                 />
                 <div className="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-wrap gap-1.5 sm:gap-2">
                   <span className="px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold uppercase tracking-wider bg-black/60 backdrop-blur-md text-emerald border border-emerald/30">

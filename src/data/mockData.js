@@ -63,51 +63,147 @@ export const projectsData = [
   {
     id: "nirvana-valley",
     title: "Nirvana Valley",
-    category: "Township",
-    stage: "Planning",
-    client: "GEK Builders",
+    category: "Luxury Township",
+    stage: "Flagship",
+    client: "GEK Builders & K. V. Ramanathan",
     location: "Nilambur, Kerala",
     scale: "200 Acres",
     isFlagship: true,
-    tagline: "200-acre integrated township featuring ultra-luxury mansions, golf course, and wellness center.",
-    description: "Nirvana Valley is a visionary 200-acre integrated township designed for those who seek the ultimate in luxury and wellness. Featuring ultra-luxury mansions, a championship golf course, and a world-class wellness center, it redefines retirement and leisure living in God's Own Country.",
-    heroImage: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop",
+    tagline: "200-acre integrated township featuring ultra-luxury mansions, championship golf course, and wellness sanctuary.",
+    description: "Nirvana Valley is a visionary 200-acre integrated township designed for those who seek the ultimate in luxury and wellness. Featuring ultra-luxury mansions, a championship golf course, and a world-class wellness center, it redefines leisure living in God's Own Country.",
+    heroImage: "/projects/nirvana-valley.jpg",
     gallery: [
+      "/projects/nirvana-valley.jpg",
       "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
     ],
     features: [
-      "200 Acres",
-      "Golf Course",
-      "Wellness Center",
-      "Luxury Mansions"
+      "200 Acres Masterplan",
+      "Championship Golf Course",
+      "Wellness & Spa Center",
+      "Ultra-Luxury Mansions"
     ]
   },
   {
     id: "skygarden-villas",
     title: "Skygarden Villas",
     category: "Residential",
-    stage: "Planning",
-    client: "Sea2Sky",
+    stage: "Finishing Phase",
+    client: "Sea2Sky & Dr. Ananya Sen",
     location: "Ranchi, Jharkhand",
     scale: "62 Exclusive Units",
     isFlagship: false,
-    tagline: "62 Eco-friendly luxury villas designed for privacy and sustainable living.",
-    description: "A sanctuary in the city featuring vertical gardens and smart home integration. Blends sustainable engineering with privacy and luxury living.",
-    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+    tagline: "62 Eco-friendly luxury villas with cascading vertical gardens, solar integration, and privacy living.",
+    description: "A serene biophilic sanctuary in Ranchi featuring vertical gardens and smart home integration. Blends sustainable engineering with privacy, IGBC Gold environmental standards, and luxury living.",
+    heroImage: "/projects/skygarden-villas.jpg",
     gallery: [
+      "/projects/skygarden-villas.jpg",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop"
     ],
     features: [
-      "62 Exclusive Units",
-      "Infinity Pool",
-      "Vertical Gardens",
+      "62 Exclusive Villas",
+      "Vertical Living Gardens",
       "Smart Home Automation",
       "IGBC Gold Pre-certified"
+    ]
+  },
+  {
+    id: "sahay-commercial-hub",
+    title: "Sahay Commercial Hub",
+    category: "Commercial",
+    stage: "Completed",
+    client: "Sahay Enterprises & Vikramaditya Sahay",
+    location: "Ratu Road, Ranchi, Jharkhand",
+    scale: "140,000 Sq. Ft.",
+    isFlagship: false,
+    tagline: "140,000 sq. ft. turnkey business plaza with glass-curtain facade, multi-level parking, and central HVAC.",
+    description: "A premier commercial destination along the bustling Ratu Road arterial corridor in Ranchi. Combining structural steel curtain-wall glass facade engineering with multi-level basement parking, high-speed passenger elevators, and earthquake-resistant RCC framing.",
+    heroImage: "/projects/sahay-commercial-hub.jpg",
+    gallery: [
+      "/projects/sahay-commercial-hub.jpg",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
+    ],
+    features: [
+      "140,000 Sq. Ft. Built-Up Area",
+      "High-Speed Smart Elevators",
+      "Double-Height Grand Lobby",
+      "Multi-Tier Basement Parking"
+    ]
+  },
+  {
+    id: "singh-logistics-corridor",
+    title: "Singh Heavy Logistics Corridor",
+    category: "Industrial",
+    stage: "Operational",
+    client: "Singh Heavy Logistics & Rajeshwar Prasad Singh",
+    location: "Jamshedpur, Jharkhand",
+    scale: "45 Acres",
+    isFlagship: false,
+    tagline: "45-acre engineered industrial logistics facility with laser-screed heavy RCC paving and automated freight docks.",
+    description: "A strategic industrial infrastructure project in Jharkhand's industrial heartland. Features heavy-duty laser-screed flooring, expansive pre-engineered building (PEB) spans, integrated stormwater drainage, and dedicated freight transit corridors.",
+    heroImage: "/projects/singh-logistics-corridor.jpg",
+    gallery: [
+      "/projects/singh-logistics-corridor.jpg",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop"
+    ],
+    features: [
+      "45 Acres Masterplan",
+      "Laser-Screed Heavy RCC Paving",
+      "Automated Docking Bays",
+      "Heavy Industrial PEB Spans"
+    ]
+  },
+  {
+    id: "bokaro-greens-towers",
+    title: "Bokaro Greens Towers",
+    category: "Residential",
+    stage: "Under Construction",
+    client: "Agarwal Greens & Pooja Agarwal",
+    location: "Bokaro Steel City, Jharkhand",
+    scale: "180 Luxury Units",
+    isFlagship: false,
+    tagline: "Twin 18-story high-rise residences with panoramic city views, RERA compliance, and seismic shear walls.",
+    description: "A landmark residential address in Bokaro Steel City offering high-rise panoramic views. Designed with wind-tunnel structural modeling, earthquake-resistant shear wall construction, infinity-edge swimming pool, and landscaped podium gardens.",
+    heroImage: "/projects/bokaro-greens-towers.jpg",
+    gallery: [
+      "/projects/bokaro-greens-towers.jpg",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+    ],
+    features: [
+      "Twin 18-Story Towers",
+      "RERA Approved Development",
+      "Landscaped Podium Gardens",
+      "Earthquake-Resistant Shear Walls"
+    ]
+  },
+  {
+    id: "prathna-heights",
+    title: "Prathna Heights Corporate Hub",
+    category: "Corporate Hub",
+    stage: "Operational Headquarters",
+    client: "Kumar Construction Corporate HQ",
+    location: "Ratu Road Chowk, Ranchi, Jharkhand",
+    scale: "75,000 Sq. Ft.",
+    isFlagship: true,
+    tagline: "Official corporate headquarters and premium executive commercial suites at Ratu Road Chowk, Ranchi.",
+    description: "The official headquarters of Kumar Construction, Prathna Heights is an architectural beacon at Ratu Road Chowk. Featuring contemporary granite & energy-efficient glass facades, high-speed access control, and state-of-the-art engineering boardrooms.",
+    heroImage: "/projects/prathna-heights.jpg",
+    gallery: [
+      "/projects/prathna-heights.jpg",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
+    ],
+    features: [
+      "Kumar Construction Corporate HQ",
+      "Granite & Solar-Control Glass",
+      "Ratu Road Chowk Landmark",
+      "Executive Boardrooms & Suites"
     ]
   }
 ];
