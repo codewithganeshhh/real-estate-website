@@ -8,24 +8,24 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "Kya Kumar Construction Ranchi ke alawa pure Jharkhand me turnkey projects karti hai?",
-      answer: "Haan, bilkul. Hamara corporate head office Ranchi (301, Prathna Heights, Ratu Road Chowk) me sthit hai, par hum pure Jharkhand — jaise Ranchi, Jamshedpur, Bokaro Steel City, Dhanbad, Ramgarh aur Hazaribagh me large-scale commercial complexes, turnkey residential towers, aur heavy industrial logistics parks execute karte hain. Select institutional clients ke liye hum interstate infrastructure & masterplanning advisory bhi deliver karte hain."
+      question: "Does Kumar Construction take on turnkey projects outside Ranchi across Jharkhand?",
+      answer: "Yes, absolutely. While our corporate headquarters is based in Ranchi at 301, Prathna Heights, Ratu Road Chowk, our engineering operations span the entire state of Jharkhand — including Jamshedpur, Bokaro Steel City, Dhanbad, Ramgarh, and Hazaribagh. We execute turnkey commercial business plazas, luxury residential towers, and heavy industrial logistics corridors, alongside masterplanning advisory for select interstate infrastructure developments."
     },
     {
-      question: "Payment structure kaisa hota hai? (Milestone-based stage payments)",
-      answer: "Kumar Construction 100% transparent, milestone-linked escrow payment structure par kaam karta hai. Har payment stage-wise deliverables par mapped hoti hai — jaise Geotechnical Testing & Foundation, Ground-Floor RCC Casting, Superstructure Slab Handover, Brickwork & MEP Rough-Ins, aur Final Finishing/Occupancy. Client ko har milestone par NABL lab test aur third-party structural audit report milne ke baad hi agle phase ki payment release karni hoti hai."
+      question: "What is the payment structure and milestone schedule for projects?",
+      answer: "Kumar Construction operates on a 100% transparent, milestone-linked escrow payment framework. Payments are strictly mapped to verified construction stages — such as Geotechnical Testing & Foundation, Ground-Floor RCC Casting, Superstructure Slab Handover, Brickwork & MEP Rough-Ins, and Final Handover. Clients release subsequent funds only after on-site milestone delivery and third-party NABL lab quality clearance."
     },
     {
-      question: "Client ko site progress aur material testing report kaise milti hai?",
-      answer: "Hum complete institutional transparency ensure karte hain. Har project ke client ko weekly high-resolution site progress photos, drone video updates, aur material quality certificates provide kiye jaate hain. Isme Fe 550D primary TMT steel tensile reports, RMC concrete cube compressive strength tests (M30-M45 grade), aur anti-termite/waterproofing certifications shamil hote hain jo dedicated digital dashboard aur WhatsApp desk par directly share hote hain."
+      question: "How do clients receive on-site progress updates and material testing reports?",
+      answer: "We maintain institutional transparency throughout execution. Clients receive weekly high-definition photo documentation, drone progression footage, and certified material inspection certificates. These include Primary Fe 550D TMT tensile test results, RMC concrete cube compressive strength tests (M30–M45 grade), and anti-termite/waterproofing certifications delivered via our client desk and WhatsApp portal."
     },
     {
-      question: "Project handover ke baad structural maintenance aur warranty support milta hai?",
-      answer: "Ji haan. Turnkey delivery ke baad Kumar Construction structural stability certificate, waterproofing warranty, aur post-handover defect liability maintenance contract provide karta hai. Handover ke initial 12 se 24 mahine ke dauran hamari civil maintenance cell regular structural audits aur preventive inspections conduct karti hai taaki building ki structural longevity hamesha pristine rahe."
+      question: "Is there post-handover structural maintenance and warranty support provided?",
+      answer: "Yes. Every turnkey project delivered by Kumar Construction includes comprehensive structural stability certification, waterproofing warranties, and a post-handover defect liability maintenance contract. Over the initial 12 to 24 months, our civil engineering maintenance cell conducts periodic structural audits and preventive inspections to ensure enduring structural longevity."
     },
     {
-      question: "Naye project ke liye site visit ya direct consultation kaise schedule karein?",
-      answer: "Aap hamare corporate headquarters (301, Prathna Heights, Ratu Road Chowk, Ranchi) me physical consultation schedule kar sakte hain ya apni site ke liye preliminary geotechnical feasibility inspection book kar sakte hain. Founder & Managing Director Praful Kumar Sahu ki executive engineering desk se direct connect karne ke liye hamare phone desk (+91 90712 79996) ya Contact inquiry form ke zariye turant jud sakte hain."
+      question: "How can we schedule a site visit or preliminary development consultation?",
+      answer: "You can schedule an in-person meeting at our Ranchi corporate headquarters (301, Prathna Heights, Ratu Road Chowk) or book an on-site geotechnical and development feasibility inspection. To connect directly with Founder & Managing Director Praful Kumar Sahu's executive desk, reach our phone desk at +91 90712 79996 or submit an inquiry through our Contact page."
     }
   ];
 
