@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, ArrowUpRight, Sparkles, Building2 } from 'lucide-react';
+import { MapPin, ArrowUpRight, Building2 } from 'lucide-react';
 import { projectsData } from '../data/mockData';
 
 export default function FeaturedProjects() {
@@ -12,12 +12,9 @@ export default function FeaturedProjects() {
       {/* Section Header */}
       <div className="mb-10 sm:mb-14 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 mb-2">
-            <Sparkles size={14} className="text-gold-dark dark:text-gold" />
-            <p className="text-xs uppercase tracking-[0.25em] text-gold-dark dark:text-gold font-semibold font-mono">
-              Signature Portfolio
-            </p>
-          </div>
+          <p className="text-xs uppercase tracking-[0.25em] text-gold-dark dark:text-gold font-semibold mb-1.5 font-mono">
+            Signature Portfolio
+          </p>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif text-gray-950 dark:text-white tracking-tight">
             Landmark Developments
           </h2>

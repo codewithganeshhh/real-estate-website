@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, HelpCircle, MessageSquare, PhoneCall, Sparkles } from 'lucide-react';
+import { ChevronDown, HelpCircle, PhoneCall } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { companyInfo } from '../data/mockData';
 
@@ -37,12 +37,9 @@ export default function FAQSection() {
     <section className="py-16 sm:py-24 px-4 sm:px-6 md:px-12 max-w-[1280px] mx-auto transition-colors duration-300">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold-dark dark:text-gold mb-3">
-          <Sparkles size={13} />
-          <span className="text-[11px] uppercase font-mono tracking-[0.2em] font-semibold">
-            Clear &amp; Transparent Answers
-          </span>
-        </div>
+        <p className="text-xs uppercase tracking-[0.25em] text-gold-dark dark:text-gold font-semibold mb-1.5 font-mono">
+          Questions &amp; Answers
+        </p>
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif text-gray-950 dark:text-white mb-4 tracking-tight">
           Frequently Asked Questions
         </h2>

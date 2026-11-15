@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Quote, MapPin, Sparkles, User } from 'lucide-react';
+import { Star, Quote, MapPin, User } from 'lucide-react';
 import { testimonialsData } from '../data/mockData';
 
 export default function TestimonialsMarquee() {
@@ -11,12 +11,9 @@ export default function TestimonialsMarquee() {
       {/* Section Header */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 mb-8 sm:mb-10 flex flex-col sm:flex-row justify-between sm:items-end gap-3 sm:gap-4">
         <div>
-          <div className="flex items-center gap-2 mb-2">
-            <Sparkles size={14} className="text-gold-dark dark:text-gold" />
-            <p className="text-xs uppercase tracking-[0.25em] text-gold-dark dark:text-gold font-semibold font-mono">
-              Client Endorsements
-            </p>
-          </div>
+          <p className="text-xs uppercase tracking-[0.25em] text-gold-dark dark:text-gold font-semibold mb-1.5 font-mono">
+            Client Endorsements
+          </p>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif text-gray-950 dark:text-white tracking-tight">
             Voices of Trust
           </h2>

@@ -22,12 +22,9 @@ export default function Footer({ onOpenPolicy }) {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
 
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald/10 border border-emerald/30 text-emerald-700 dark:text-emerald mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald animate-pulse" />
-            <span className="text-[11px] uppercase font-mono tracking-widest font-semibold">
-              Ranchi Corporate Advisory Desk
-            </span>
-          </div>
+          <p className="text-xs uppercase tracking-[0.25em] text-gold-dark dark:text-gold font-semibold mb-2 font-mono">
+            Corporate Advisory
+          </p>
 
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif text-gray-950 dark:text-white mb-4 sm:mb-6 max-w-3xl mx-auto leading-tight">
             Ready to build your next landmark development?
