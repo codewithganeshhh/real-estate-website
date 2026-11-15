@@ -29,10 +29,10 @@ export default function HeroSection() {
         />
 
         {/* Cinematic dark scrim overlays so the video is deep, vivid, and crystal clear */}
-        <div className="absolute inset-0 bg-black/35 dark:bg-black/40 z-10" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/30 z-10" />
-        {/* Soft bottom transition into page background */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#F8F9FA] via-transparent to-transparent dark:from-[#050505] z-10" />
+        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/40 z-10" />
+        {/* Deep dark bottom gradient - NO washed-out white fog in light or dark mode */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent z-10" />
       </div>
 
       {/* Main Center Content with crisp high-contrast luxury typography */}

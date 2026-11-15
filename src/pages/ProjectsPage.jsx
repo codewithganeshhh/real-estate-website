@@ -15,10 +15,10 @@ export default function ProjectsPage() {
             alt="Portfolio - Kumar Construction"
             className="w-full h-full object-cover animate-hero-zoom-out"
           />
-          {/* Crisp, rich contrast overlays - NO washed-out white fog */}
+          {/* Crisp, rich contrast overlays - pure dark cinematic gradient without washed-out white fog */}
           <div className="absolute inset-0 bg-black/45 z-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-transparent z-10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#F8F9FA] via-transparent to-transparent dark:from-[#050505] z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent z-10" />
         </div>
 
         <div className="relative z-20 w-full max-w-[1400px] mx-auto px-6 lg:px-12">
