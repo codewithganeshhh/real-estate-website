@@ -5,6 +5,7 @@ import AdvisoryPillars from '../components/AdvisoryPillars';
 import CoreVerticals from '../components/CoreVerticals';
 import FeaturedProjects from '../components/FeaturedProjects';
 import TestimonialsMarquee from '../components/TestimonialsMarquee';
+import FAQSection from '../components/FAQSection';
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -25,6 +26,9 @@ export default function HomePage() {
 
       {/* 5. Client Testimonials Infinite Marquee */}
       <TestimonialsMarquee />
+
+      {/* 6. Frequently Asked Questions Accordion */}
+      <FAQSection />
     </div>
   );
 }
