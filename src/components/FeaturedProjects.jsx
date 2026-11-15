@@ -54,18 +54,8 @@ export default function FeaturedProjects() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-              {/* Top-Left Floating Stage & Category Badges */}
-              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-wrap gap-1.5">
-                <span className="px-2.5 py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold uppercase tracking-wider bg-black/60 backdrop-blur-md text-emerald-400 border border-emerald-400/30 font-mono">
-                  {project.stage}
-                </span>
-                <span className="px-2.5 py-0.5 rounded-full text-[9px] sm:text-[10px] font-medium uppercase tracking-wider bg-black/60 backdrop-blur-md text-gray-200 border border-white/15 font-mono">
-                  {project.category}
-                </span>
-              </div>
-
-              {/* Top-Right Scale Badge */}
-              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 px-2.5 py-0.5 rounded-full text-[9px] sm:text-[10px] font-mono font-medium bg-black/65 backdrop-blur-md text-gold-light border border-gold/40">
+              {/* Top-Right Scale Badge (Acres / Units only) */}
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 px-3 py-1 rounded-full text-[10px] sm:text-xs font-mono font-medium bg-black/65 backdrop-blur-md text-gold-light border border-gold/40">
                 {project.scale}
               </div>
 
@@ -81,31 +71,19 @@ export default function FeaturedProjects() {
             <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
               <div>
                 {/* Location */}
-                <div className="flex items-center gap-1.5 text-xs text-emerald-700 dark:text-emerald font-mono mb-2.5">
+                <div className="flex items-center gap-1.5 text-xs text-emerald-700 dark:text-emerald font-mono mb-2">
                   <MapPin size={12} className="shrink-0" />
                   <span className="truncate">{project.location}</span>
                 </div>
 
                 {/* Brief Tagline */}
-                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-4 line-clamp-2">
+                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-2 line-clamp-2">
                   {project.tagline}
                 </p>
-
-                {/* Key Features Pills */}
-                <div className="flex flex-wrap gap-1.5 mb-5">
-                  {project.features.slice(0, 3).map((feat, fidx) => (
-                    <span
-                      key={fidx}
-                      className="text-[10px] sm:text-[11px] text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-white/5 px-2.5 py-1 rounded-md border border-gray-200 dark:border-white/5 font-mono"
-                    >
-                      {feat}
-                    </span>
-                  ))}
-                </div>
               </div>
 
               {/* Card Footer */}
-              <div className="pt-3.5 border-t border-gray-100 dark:border-white/10 flex items-center justify-between">
+              <div className="pt-4 border-t border-gray-100 dark:border-white/10 flex items-center justify-between">
                 <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-bold text-gold-dark dark:text-gold group-hover:text-emerald-700 dark:group-hover:text-emerald transition-colors font-mono">
                   <span>View Case Study</span>
                   <ArrowUpRight size={14} className="transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

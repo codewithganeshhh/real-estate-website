@@ -54,43 +54,22 @@ export default function ProjectsPage() {
                     e.target.src = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop";
                   }}
                 />
-                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-wrap gap-1.5 sm:gap-2">
-                  <span className="px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold uppercase tracking-wider bg-black/60 backdrop-blur-md text-emerald border border-emerald/30">
-                    {project.stage}
-                  </span>
-                  <span className="px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-medium uppercase tracking-wider bg-black/60 backdrop-blur-md text-gray-300 border border-white/10">
-                    {project.category}
-                  </span>
-                </div>
-
-                {/* Outline Icon badge on top-right of image that fills on card hover */}
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-black/60 backdrop-blur-md border border-white/20 text-gray-300 group-hover:bg-gold/25 group-hover:border-gold group-hover:text-gold group-hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] flex items-center justify-center transition-all duration-300">
-                  <Building2 size={16} className="fill-transparent group-hover:fill-gold/40 transition-all duration-300 sm:w-[18px] sm:h-[18px]" />
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 px-3 py-1 rounded-full text-[10px] sm:text-xs font-mono font-medium bg-black/65 backdrop-blur-md text-gold-light border border-gold/40">
+                  {project.scale}
                 </div>
               </div>
 
-              <div className="p-5 sm:p-8 flex-1 flex flex-col justify-between">
+              <div className="p-5 sm:p-7 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-serif text-gray-950 dark:text-white mb-1 group-hover:text-gold-dark dark:group-hover:text-gold transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-serif text-gray-950 dark:text-white mb-1 group-hover:text-gold-dark dark:group-hover:text-gold transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-3 sm:mb-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
                     {project.location} • <span className="text-gray-700 dark:text-gray-300">Client: {project.client}</span>
                   </p>
-                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-5 sm:mb-6">
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-4">
                     {project.tagline}
                   </p>
-
-                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-5 sm:mb-6">
-                    {project.features.map((feat, fidx) => (
-                      <span
-                        key={fidx}
-                        className="text-[11px] sm:text-xs text-gray-700 dark:text-gray-400 bg-gray-100 dark:bg-white/5 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded border border-gray-200 dark:border-white/5"
-                      >
-                        {feat}
-                      </span>
-                    ))}
-                  </div>
                 </div>
 
                 <div className="pt-4 border-t border-gray-100 dark:border-white/10 flex items-center justify-between">
