@@ -16,45 +16,40 @@ const serviceMeta = {
     category: 'Masterplanning & Civil',
     icon: Building2,
     description: 'Full-cycle strategic governance, statutory clearances, and capital structuring for large-scale township and masterplanned developments.',
-    cardHover: 'hover:border-amber-400/50 hover:shadow-[0_15px_35px_rgba(245,158,11,0.18)]',
-    iconBoxHover: 'group-hover:border-amber-400/70 group-hover:bg-amber-400/15 group-hover:shadow-[0_0_20px_rgba(245,158,11,0.3)]',
-    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-amber-500 dark:group-hover:text-amber-400 group-hover:fill-amber-400/60'
+    cardHover: 'hover:border-amber-400/50 hover:shadow-[0_15px_35px_rgba(245,158,11,0.2)]',
+    iconBox: 'border-gray-200 bg-gray-50 text-gray-700 dark:border-white/15 dark:bg-white/[0.04] dark:text-gray-300 group-hover:bg-amber-500 dark:group-hover:bg-amber-400 group-hover:border-amber-500 dark:group-hover:border-amber-400 group-hover:text-black dark:group-hover:text-black group-hover:shadow-[0_0_25px_rgba(245,158,11,0.55)]'
   },
   'feasibility-advisory': {
     index: '02',
     category: 'Due Diligence & Site Diligence',
     icon: FileCheck,
     description: 'Comprehensive geotechnical review, site diligence, municipal zoning verification, and economic viability modeling before land acquisition.',
-    cardHover: 'hover:border-emerald-400/50 hover:shadow-[0_15px_35px_rgba(16,185,129,0.18)]',
-    iconBoxHover: 'group-hover:border-emerald-400/70 group-hover:bg-emerald-400/15 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]',
-    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-emerald-500 dark:group-hover:text-emerald-400 group-hover:fill-emerald-400/60'
+    cardHover: 'hover:border-emerald-400/50 hover:shadow-[0_15px_35px_rgba(16,185,129,0.2)]',
+    iconBox: 'border-gray-200 bg-gray-50 text-gray-700 dark:border-white/15 dark:bg-white/[0.04] dark:text-gray-300 group-hover:bg-emerald-500 dark:group-hover:bg-emerald-400 group-hover:border-emerald-500 dark:group-hover:border-emerald-400 group-hover:text-black dark:group-hover:text-black group-hover:shadow-[0_0_25px_rgba(16,185,129,0.55)]'
   },
   'investment-capital': {
     index: '03',
     category: 'Capital Advisory & Syndication',
     icon: Award,
     description: 'Structuring private equity participation, institutional debt syndication, and structured financial stacks designed for commercial and high-density assets.',
-    cardHover: 'hover:border-gold/50 hover:shadow-[0_15px_35px_rgba(212,175,55,0.18)]',
-    iconBoxHover: 'group-hover:border-gold/70 group-hover:bg-gold/15 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]',
-    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-gold-dark dark:group-hover:text-gold group-hover:fill-gold/60'
+    cardHover: 'hover:border-gold/50 hover:shadow-[0_15px_35px_rgba(212,175,55,0.2)]',
+    iconBox: 'border-gray-200 bg-gray-50 text-gray-700 dark:border-white/15 dark:bg-white/[0.04] dark:text-gray-300 group-hover:bg-gold dark:group-hover:bg-gold group-hover:border-gold dark:group-hover:border-gold group-hover:text-black dark:group-hover:text-black group-hover:shadow-[0_0_25px_rgba(212,175,55,0.55)]'
   },
   'market-entry': {
     index: '04',
     category: 'Strategic Expansion',
     icon: Compass,
     description: 'Market expansion roadmaps, regional joint ventures, and municipal navigation for national builders, regional consortiums, and NRI developers.',
-    cardHover: 'hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)]',
-    iconBoxHover: 'group-hover:border-sky-400/70 group-hover:bg-sky-400/15 group-hover:shadow-[0_0_20px_rgba(14,165,233,0.3)]',
-    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-sky-500 dark:group-hover:text-sky-400 group-hover:fill-sky-400/60'
+    cardHover: 'hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.2)]',
+    iconBox: 'border-gray-200 bg-gray-50 text-gray-700 dark:border-white/15 dark:bg-white/[0.04] dark:text-gray-300 group-hover:bg-sky-500 dark:group-hover:bg-sky-400 group-hover:border-sky-500 dark:group-hover:border-sky-400 group-hover:text-black dark:group-hover:text-black group-hover:shadow-[0_0_25px_rgba(14,165,233,0.55)]'
   },
   'corporate-structuring': {
     index: '05',
     category: 'Governance & Legal Frameworks',
     icon: Layers,
     description: 'Special Purpose Vehicle (SPV) formation, joint development agreements (JDA), equity waterfall structuring, and statutory governance for partnerships.',
-    cardHover: 'hover:border-purple-400/50 hover:shadow-[0_15px_35px_rgba(168,85,247,0.18)]',
-    iconBoxHover: 'group-hover:border-purple-400/70 group-hover:bg-purple-400/15 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]',
-    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-purple-500 dark:group-hover:text-purple-400 group-hover:fill-purple-400/60'
+    cardHover: 'hover:border-purple-400/50 hover:shadow-[0_15px_35px_rgba(168,85,247,0.2)]',
+    iconBox: 'border-gray-200 bg-gray-50 text-gray-700 dark:border-white/15 dark:bg-white/[0.04] dark:text-gray-300 group-hover:bg-purple-500 dark:group-hover:bg-purple-400 group-hover:border-purple-500 dark:group-hover:border-purple-400 group-hover:text-white dark:group-hover:text-black group-hover:shadow-[0_0_25px_rgba(168,85,247,0.55)]'
   }
 };
 
@@ -163,14 +158,14 @@ export default function ServicesPage() {
                       </span>
                     </div>
 
-                    {/* Logo/Icon Container with Color Fill Hover Effect */}
+                    {/* Logo/Icon Container with Solid Color Fill Hover Effect */}
                     <div
-                      className={`w-12 h-12 rounded-2xl border border-gray-200 bg-gray-50 dark:border-white/15 dark:bg-white/[0.04] ${meta.iconBoxHover} transition-all duration-300 flex items-center justify-center shrink-0`}
+                      className={`w-12 h-12 rounded-2xl border transition-all duration-300 flex items-center justify-center shrink-0 ${meta.iconBox}`}
                     >
                       <Icon
                         size={22}
-                        strokeWidth={1.8}
-                        className={`transition-all duration-300 group-hover:scale-110 ${meta.iconColor}`}
+                        strokeWidth={2}
+                        className="transition-transform duration-300 group-hover:scale-110"
                       />
                     </div>
                   </div>
