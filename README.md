@@ -15,7 +15,7 @@ A clean, high-performance, ultra-luxury multi-page **React (React Router v6) + T
 2. **About Us (`/about`)**:
    - Dedicated page with architectural hero banner.
    - "The Firm - Bridging Capital & Execution - Redefining Real Value".
-   - Our Origins (Est. 2023, Ranchi HQ) & The Vision.
+   - Our Origins (Est. 2026, Ranchi HQ) & The Vision.
    - Leadership profile: **Praful Kumar Sahu** (Founder & Managing Director).
 
 3. **Projects Portfolio (`/projects`)**:

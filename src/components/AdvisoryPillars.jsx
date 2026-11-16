@@ -9,12 +9,12 @@ export default function AdvisoryPillars({ onLearnMore }) {
       desc: "Technical consulting and turnkey civil construction backed by decades of infrastructure development experience — from site feasibility to full project delivery.",
       footer: "20+ Years Track Record",
       icon: Building2,
-      topBorder: "border-t-4 border-t-emerald-600 dark:border-t-emerald-400",
-      iconBox: "border-emerald-200 bg-emerald-50 text-emerald-800 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white dark:group-hover:bg-emerald-500 dark:group-hover:text-black",
-      titleColor: "text-gray-950 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400",
+      topBorder: "border-t-4 border-t-emerald-500 dark:border-t-emerald-400",
+      iconBox: "border-emerald-200 bg-emerald-50 text-emerald-600 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white dark:group-hover:bg-emerald-400 dark:group-hover:text-black",
+      titleColor: "text-emerald-600 dark:text-emerald-400 group-hover:text-emerald-500 dark:group-hover:text-emerald-300",
       borderHover: "hover:border-emerald-500 dark:hover:border-emerald-400/60",
       glow: "hover:shadow-[0_20px_45px_rgba(16,185,129,0.18)]",
-      footerColor: "text-emerald-800 dark:text-emerald-400 font-semibold"
+      footerColor: "text-emerald-600 dark:text-emerald-400 font-semibold"
     },
     {
       id: "client",
@@ -22,12 +22,12 @@ export default function AdvisoryPillars({ onLearnMore }) {
       desc: "We build long-term partnerships with our clients, delivering honest counsel, transparent BOQs, and disciplined execution strategies at every stage.",
       footer: "100% Milestone Delivery",
       icon: Handshake,
-      topBorder: "border-t-4 border-t-amber-600 dark:border-t-gold",
-      iconBox: "border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-gold group-hover:bg-amber-600 group-hover:text-white dark:group-hover:bg-gold dark:group-hover:text-black",
-      titleColor: "text-gray-950 dark:text-white group-hover:text-amber-600 dark:group-hover:text-gold",
-      borderHover: "hover:border-amber-500 dark:hover:border-gold/60",
+      topBorder: "border-t-4 border-t-amber-500 dark:border-t-amber-400",
+      iconBox: "border-amber-200 bg-amber-50 text-amber-600 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-300 group-hover:bg-amber-500 group-hover:text-white dark:group-hover:bg-amber-300 dark:group-hover:text-black",
+      titleColor: "text-amber-600 dark:text-amber-300 group-hover:text-amber-500 dark:group-hover:text-amber-200",
+      borderHover: "hover:border-amber-500 dark:hover:border-amber-400/60",
       glow: "hover:shadow-[0_20px_45px_rgba(217,119,6,0.18)]",
-      footerColor: "text-amber-800 dark:text-gold font-semibold"
+      footerColor: "text-amber-600 dark:text-amber-400 font-semibold"
     },
     {
       id: "standards",
@@ -35,24 +35,24 @@ export default function AdvisoryPillars({ onLearnMore }) {
       desc: "Next-generation engineering combining seismic-resilient structural frameworks, smart MEP planning, and IGBC Gold sustainable construction.",
       footer: "IGBC Gold Pre-Certified",
       icon: Leaf,
-      topBorder: "border-t-4 border-t-teal-600 dark:border-t-teal-400",
-      iconBox: "border-teal-200 bg-teal-50 text-teal-800 dark:border-teal-500/30 dark:bg-teal-500/10 dark:text-teal-400 group-hover:bg-teal-600 group-hover:text-white dark:group-hover:bg-teal-500 dark:group-hover:text-black",
-      titleColor: "text-gray-950 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400",
+      topBorder: "border-t-4 border-t-teal-500 dark:border-t-teal-400",
+      iconBox: "border-teal-200 bg-teal-50 text-teal-600 dark:border-teal-500/30 dark:bg-teal-500/10 dark:text-teal-300 group-hover:bg-teal-500 group-hover:text-white dark:group-hover:bg-teal-300 dark:group-hover:text-black",
+      titleColor: "text-teal-600 dark:text-teal-300 group-hover:text-teal-500 dark:group-hover:text-teal-200",
       borderHover: "hover:border-teal-500 dark:hover:border-teal-400/60",
       glow: "hover:shadow-[0_20px_45px_rgba(13,148,136,0.18)]",
-      footerColor: "text-teal-800 dark:text-teal-300 font-semibold"
+      footerColor: "text-teal-600 dark:text-teal-300 font-semibold"
     }
   ];
 
   return (
     <section className="py-16 md:py-28 px-4 sm:px-6 md:px-12 relative bg-gray-50/80 dark:bg-[#050505] border-b border-gray-200 dark:border-white/5 transition-colors duration-300">
       <div className="max-w-[1280px] mx-auto">
-        {/* Subtle, refined editorial headline */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif leading-[1.28] text-gray-600 dark:text-gray-400 mb-10 md:mb-16 max-w-5xl font-light">
+        {/* Colorful yet light & soft editorial headline */}
+        <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif leading-[1.28] text-gray-700 dark:text-gray-300 mb-10 md:mb-16 max-w-5xl font-light">
           <span className="text-gray-950 dark:text-white font-semibold">Kumar Construction</span> delivers{' '}
-          <span className="text-gray-900 dark:text-gray-100 font-medium">turnkey engineering</span>,{' '}
-          <span className="text-gray-900 dark:text-gray-100 font-medium">specialist advisory</span>, and{' '}
-          <span className="text-gray-900 dark:text-gray-100 font-medium">technical consultation</span> for landmark infrastructure development projects.
+          <span className="text-emerald-500 dark:text-emerald-400 font-medium">turnkey engineering</span>,{' '}
+          <span className="text-amber-500 dark:text-amber-300 font-medium">specialist advisory</span>, and{' '}
+          <span className="text-teal-500 dark:text-teal-300 font-medium">technical consultation</span> for landmark infrastructure development projects.
         </h2>
 
         {/* 3 Refined Architectural Pillar Cards */}

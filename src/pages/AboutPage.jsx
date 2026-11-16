@@ -136,7 +136,7 @@ export default function AboutPage() {
                 OUR ORIGINS
               </h3>
               <p className="leading-relaxed">
-                Established in 2023, <strong className="text-gray-950 dark:text-white font-medium">Kumar Construction</strong> is headquartered in Ranchi, Jharkhand at 301, Prathna Heights, Ratu Road Chowk. Founded by sole owner and Managing Director <strong className="text-gray-950 dark:text-white font-medium">Praful Kumar Sahu</strong>, we operate with a singular focus: <span className="text-gray-950 dark:text-white font-medium">value creation</span>. We are a specialist infrastructure and turnkey civil engineering firm, guiding clients through every stage of development — from concept to completion.
+                Established in 2026, <strong className="text-gray-950 dark:text-white font-medium">Kumar Construction</strong> is headquartered in Ranchi, Jharkhand at 301, Prathna Heights, Ratu Road Chowk. Founded by sole owner and Managing Director <strong className="text-gray-950 dark:text-white font-medium">Praful Kumar Sahu</strong>, we operate with a singular focus: <span className="text-gray-950 dark:text-white font-medium">value creation</span>. We are a specialist infrastructure and turnkey civil engineering firm, guiding clients through every stage of development — from concept to completion.
               </p>
             </div>
 
@@ -153,7 +153,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-6 sm:gap-8 pt-8 border-t border-gray-200 dark:border-gold/20">
               <div>
                 <span className="block text-3xl sm:text-4xl font-serif text-gray-950 dark:text-white mb-1.5 font-bold">
-                  2023
+                  2026
                 </span>
                 <span className="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 font-mono">
                   Established

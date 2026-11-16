@@ -1,7 +1,7 @@
 export const companyInfo = {
   name: "Kumar Construction",
   tagline: "Building Future-Ready Infrastructure. Creating Enduring Value.",
-  established: 2023,
+  established: 2026,
   owner: "Praful Kumar Sahu",
   location: "Ranchi, Jharkhand",
   address: "301, Prathna Heights, Ratu Road Chowk, Ranchi, Jharkhand – 834001",

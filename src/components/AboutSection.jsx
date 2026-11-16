@@ -27,7 +27,7 @@ export default function AboutSection() {
             Our Origins
           </h3>
           <p className="text-sm sm:text-base text-gray-300 font-light leading-relaxed">
-            Established in 2023, <strong className="text-white font-medium">Kumar Construction</strong> is headquartered in Ranchi, Jharkhand. We operate with a singular focus: <strong className="text-white font-medium">value creation</strong>. We are a specialist infrastructure and turnkey construction firm, guiding clients through every stage of development — from concept to completion.
+            Established in 2026, <strong className="text-white font-medium">Kumar Construction</strong> is headquartered in Ranchi, Jharkhand. We operate with a singular focus: <strong className="text-white font-medium">value creation</strong>. We are a specialist infrastructure and turnkey construction firm, guiding clients through every stage of development — from concept to completion.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function AboutSection() {
           </p>
           <div className="flex items-center gap-10 font-mono text-xs">
             <div>
-              <span className="block text-2xl font-serif font-bold text-white">2023</span>
+              <span className="block text-2xl font-serif font-bold text-white">2026</span>
               <span className="text-gray-400">Established</span>
             </div>
             <div className="border-l border-white/10 pl-10">
