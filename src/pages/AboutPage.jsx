@@ -114,290 +114,98 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 2. Editorial Narrative Section (Redesigned: High-End Architectural Suite) */}
-      <section className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-20 sm:py-28 border-b border-gray-200 dark:border-white/5">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left Column (5 Cols): Philosophy, Headline & Luxury Quote Box */}
-          <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-28">
-            <div>
-              <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-gold dark:text-gold font-mono font-bold mb-3">
-                <span className="w-2 h-2 rounded-full bg-gold inline-block animate-pulse" />
-                Institutional Foundation
-              </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-950 dark:text-white leading-[1.18] tracking-tight">
-                Redefining <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-500 dark:from-emerald-400 dark:via-teal-300 dark:to-emerald-300 italic font-serif">
-                  Real Value.
-                </span>
-              </h2>
-            </div>
-
-            {/* Architectural Pull Quote Box */}
-            <div className="relative p-6 sm:p-8 rounded-2xl bg-white dark:bg-[#0D0D0D] border-l-4 border-l-gold border-y border-r border-gray-200 dark:border-white/10 shadow-lg dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
-              <Quote className="w-8 h-8 text-gold/30 mb-3" />
-              <p className="text-base sm:text-lg text-gray-800 dark:text-gray-200 font-serif italic leading-relaxed mb-4">
-                &quot;We recognized that true real estate value isn&#x27;t just in land acquisition, but in the intelligent, disciplined development of enduring communities.&quot;
-              </p>
-              <div className="flex items-center gap-3 pt-3 border-t border-gray-100 dark:border-white/10 text-xs font-mono">
-                <span className="font-bold text-gray-950 dark:text-white uppercase tracking-wider">Praful Kumar Sahu</span>
-                <span className="text-gray-400 dark:text-gray-500">•</span>
-                <span className="text-emerald-600 dark:text-emerald-400">Founder &amp; MD</span>
-              </div>
-            </div>
-
-            {/* Quick Trust Highlights */}
-            <div className="space-y-3 pt-2">
-              <div className="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300 font-light">
-                <CheckCircle2 size={16} className="text-emerald-500 flex-shrink-0" />
-                <span>Direct single-source developer accountability across Jharkhand</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300 font-light">
-                <CheckCircle2 size={16} className="text-emerald-500 flex-shrink-0" />
-                <span>Zero hidden escalations — milestone-governed stage BOQs</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300 font-light">
-                <CheckCircle2 size={16} className="text-emerald-500 flex-shrink-0" />
-                <span>Certified seismic-resilient structural engineering standards</span>
-              </div>
-            </div>
+      {/* 2. Editorial Narrative Section (Clean Split Alignment) */}
+      <section className="max-w-[1400px] mx-auto px-6 py-20 sm:py-28">
+        <div className="grid md:grid-cols-2 gap-12 sm:gap-16 lg:gap-24 items-start">
+          {/* Left Column: Redefining Real Value */}
+          <div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-950 dark:text-white leading-tight mb-6">
+              Redefining <br />
+              <span className="text-emerald-700 dark:text-emerald italic font-serif">Real Value.</span>
+            </h2>
+            <div className="w-16 h-1 bg-gold mb-6" />
+            <blockquote className="text-lg sm:text-xl text-gray-800 dark:text-white/80 font-serif italic leading-relaxed">
+              &quot;We recognized that true real estate value isn&#x27;t just in land acquisition, but in the intelligent development of communities.&quot;
+            </blockquote>
           </div>
 
-          {/* Right Column (7 Cols): Structured Architectural Origins & Vision Cards */}
-          <div className="lg:col-span-7 space-y-6">
-            {/* Card 1: Origins & Corporate Headquarters */}
-            <div className="p-7 sm:p-9 rounded-2xl bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-xl hover:border-gold/40 transition-all duration-300 relative overflow-hidden group">
-              <div className="flex items-start justify-between gap-4 mb-5">
-                <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/25 flex items-center justify-center text-gold">
-                  <Building2 size={24} strokeWidth={1.8} />
-                </div>
-                <span className="px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider bg-gray-100 text-gray-700 dark:bg-white/5 dark:text-gray-300 border border-gray-200 dark:border-white/10">
-                  Ranchi HQ • Jharkhand
-                </span>
-              </div>
-
-              <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-950 dark:text-white mb-2 group-hover:text-gold transition-colors">
-                Our Origins &amp; Foundation
+          {/* Right Column: OUR ORIGINS & THE VISION & STATS */}
+          <div className="space-y-8 sm:space-y-10 text-base sm:text-lg font-light leading-relaxed text-gray-700 dark:text-gray-300">
+            <div>
+              <h3 className="text-gold-dark dark:text-gold uppercase tracking-widest text-xs sm:text-sm mb-3 font-bold font-mono">
+                OUR ORIGINS
               </h3>
-              
-              <div className="flex items-center gap-2 text-xs font-mono text-emerald-600 dark:text-emerald-400 mb-4">
-                <MapPin size={13} />
-                <span>301, Prathna Heights, Ratu Road Chowk, Ranchi – 834001</span>
-              </div>
-
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-5">
-                Established in 2026, <strong className="text-gray-950 dark:text-white font-medium">Kumar Construction</strong> operates with an unyielding mandate: <strong className="text-gray-950 dark:text-white font-medium">real value creation</strong>. Founded by sole owner and Managing Director <strong className="text-gray-950 dark:text-white font-medium">Praful Kumar Sahu</strong>, we bridge strategic capital syndication with boots-on-the-ground turnkey engineering, guiding client projects from site feasibility through full commissioning.
+              <p className="leading-relaxed">
+                Established in 2026, <strong className="text-gray-950 dark:text-white font-medium">Kumar Construction</strong> is headquartered in Ranchi, Jharkhand at 301, Prathna Heights, Ratu Road Chowk. Founded by sole owner and Managing Director <strong className="text-gray-950 dark:text-white font-medium">Praful Kumar Sahu</strong>, we operate with a singular focus: <span className="text-gray-950 dark:text-white font-medium">value creation</span>. We are a specialist infrastructure and turnkey civil engineering firm, guiding clients through every stage of development — from concept to completion.
               </p>
-
-              <div className="pt-4 border-t border-gray-100 dark:border-white/5 flex flex-wrap gap-2 text-[11px] font-mono">
-                <span className="px-2.5 py-1 rounded bg-gray-50 dark:bg-white/5 text-gray-600 dark:text-gray-400 border border-gray-200/60 dark:border-white/5">
-                  Turnkey Infrastructure
-                </span>
-                <span className="px-2.5 py-1 rounded bg-gray-50 dark:bg-white/5 text-gray-600 dark:text-gray-400 border border-gray-200/60 dark:border-white/5">
-                  RERA Compliant Masterplans
-                </span>
-                <span className="px-2.5 py-1 rounded bg-gray-50 dark:bg-white/5 text-gray-600 dark:text-gray-400 border border-gray-200/60 dark:border-white/5">
-                  Civil Contracting
-                </span>
-              </div>
             </div>
 
-            {/* Card 2: Technical Vision */}
-            <div className="p-7 sm:p-9 rounded-2xl bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 relative overflow-hidden group">
-              <div className="flex items-start justify-between gap-4 mb-5">
-                <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-500 dark:text-emerald-400">
-                  <Compass size={24} strokeWidth={1.8} />
-                </div>
-                <span className="px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">
-                  Disciplined Engineering
+            <div>
+              <h3 className="text-gold-dark dark:text-gold uppercase tracking-widest text-xs sm:text-sm mb-3 font-bold font-mono">
+                THE VISION
+              </h3>
+              <p className="leading-relaxed">
+                By combining deep technical engineering expertise with disciplined execution capabilities, we help clients plan, structure, and execute landmark infrastructure projects with confidence. We deliver quality construction and honest guidance, not just reports.
+              </p>
+            </div>
+
+            {/* Credential Checkpoints Grid */}
+            <div className="grid grid-cols-2 gap-6 sm:gap-8 pt-8 border-t border-gray-200 dark:border-white/10 font-mono">
+              <div>
+                <span className="block text-3xl sm:text-4xl font-serif text-gray-950 dark:text-white mb-1.5 font-bold">
+                  2026
+                </span>
+                <span className="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">
+                  Established
                 </span>
               </div>
-
-              <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-950 dark:text-white mb-3 group-hover:text-emerald-500 transition-colors">
-                The Technical Vision
-              </h3>
-
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-5">
-                By combining advanced structural engineering with disciplined project governance, we empower institutional and private developers to execute landmark developments with absolute certainty. We do not provide abstract reports; we deliver physical structural excellence, transparent BOQ stage billing, and end-to-end statutory approvals.
-              </p>
-
-              {/* 4 Key Milestone Metrics */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-5 border-t border-gray-100 dark:border-white/5">
-                <div>
-                  <span className="block text-2xl sm:text-3xl font-serif font-bold text-gray-950 dark:text-white">
-                    2026
-                  </span>
-                  <span className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400 font-mono">
-                    Established
-                  </span>
-                </div>
-                <div>
-                  <span className="block text-2xl sm:text-3xl font-serif font-bold text-emerald-600 dark:text-emerald-400">
-                    RNC
-                  </span>
-                  <span className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400 font-mono">
-                    Ranchi HQ
-                  </span>
-                </div>
-                <div>
-                  <span className="block text-2xl sm:text-3xl font-serif font-bold text-amber-500 dark:text-gold">
-                    100%
-                  </span>
-                  <span className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400 font-mono">
-                    Milestone BOQs
-                  </span>
-                </div>
-                <div>
-                  <span className="block text-2xl sm:text-3xl font-serif font-bold text-teal-600 dark:text-teal-400">
-                    Zero
-                  </span>
-                  <span className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400 font-mono">
-                    Compromise
-                  </span>
-                </div>
+              <div>
+                <span className="block text-3xl sm:text-4xl font-serif text-emerald-700 dark:text-emerald mb-1.5 font-bold">
+                  RNC
+                </span>
+                <span className="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">
+                  Ranchi Headquarters
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 3. Executive Governance / Leadership (Grand Executive Suite) */}
-      <section className="py-20 sm:py-28 relative overflow-hidden bg-gray-50/70 dark:bg-black/60 border-b border-gray-200 dark:border-white/5">
-        {/* Subtle ambient lighting */}
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-emerald-500/5 blur-[120px] rounded-full pointer-events-none" />
+      {/* 3. Executive Governance / Leadership (Clean 2-Column Split Alignment) */}
+      <section className="py-20 sm:py-28 relative overflow-hidden border-t border-gray-200 dark:border-white/5 bg-gray-50/50 dark:bg-transparent">
+        <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+            {/* Left Column: Heading and Description */}
+            <div className="lg:col-span-5">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-gray-950 dark:text-white mb-4 sm:mb-6">
+                Leadership
+              </h2>
+              <div className="w-16 h-1 bg-gold mb-6" />
+              <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg font-light leading-relaxed">
+                Guided by the hands-on vision and structural engineering commitment of Founder &amp; Sole Owner Praful Kumar Sahu.
+              </p>
+            </div>
 
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-          {/* Section Header */}
-          <div className="max-w-2xl mb-12 sm:mb-16">
-            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-gold dark:text-gold font-mono font-bold mb-3">
-              <Award size={14} className="text-gold" />
-              Executive Governance
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-serif text-gray-950 dark:text-white leading-tight mb-4">
-              Leadership
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base font-light leading-relaxed">
-              Guided by the hands-on vision and structural engineering commitment of Founder &amp; Sole Owner Praful Kumar Sahu.
-            </p>
-          </div>
-
-          {/* Full-Width Executive Profile Card Suite */}
-          <div className="rounded-3xl bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 shadow-xl overflow-hidden">
-            <div className="grid lg:grid-cols-12 items-stretch">
-              {/* Left Column (5 Cols): Executive Visual Badge & Key Credentials */}
-              <div className="lg:col-span-5 p-8 sm:p-12 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-[#111111] dark:via-[#0c0c0c] dark:to-[#080808] border-b lg:border-b-0 lg:border-r border-gray-200 dark:border-white/10 flex flex-col justify-between">
-                <div>
-                  {/* Executive Monogram & Active Status Pill */}
-                  <div className="flex items-center justify-between gap-4 mb-8">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-gold/20 via-gold/10 to-transparent border border-gold/40 flex items-center justify-center text-gold font-serif text-2xl sm:text-3xl font-bold shadow-md">
-                      PKS
-                    </div>
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/25">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
-                      Active Site Supervision
-                    </span>
-                  </div>
-
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-gray-950 dark:text-white mb-2">
-                    Praful Kumar Sahu
+            {/* Right Column: Praful Kumar Sahu Profile Card (Fills right side, perfectly balanced) */}
+            <div className="lg:col-span-7">
+              {leadershipData.map((leader, idx) => (
+                <div
+                  key={idx}
+                  className="p-8 sm:p-12 bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 rounded-2xl sm:rounded-3xl shadow-sm hover:border-gold/30 transition-colors"
+                >
+                  <div className="w-12 h-1 bg-gold mb-6" />
+                  <h3 className="text-2xl sm:text-3xl font-serif text-gray-950 dark:text-white mb-2">
+                    {leader.name}
                   </h3>
-                  <p className="text-emerald-600 dark:text-emerald-400 text-xs sm:text-sm uppercase tracking-[0.2em] font-mono font-bold mb-6">
-                    Founder, Sole Owner &amp; Managing Director
+                  <p className="text-emerald-700 dark:text-emerald text-xs sm:text-sm uppercase tracking-[0.2em] font-bold mb-6 font-mono">
+                    {leader.role}
                   </p>
-
-                  <div className="w-14 h-1 bg-gold mb-6" />
-
-                  {/* Verified Credentials Pills */}
-                  <div className="space-y-2.5">
-                    <div className="flex items-center gap-2.5 text-xs font-mono text-gray-700 dark:text-gray-300">
-                      <ShieldCheck size={16} className="text-gold flex-shrink-0" />
-                      <span>Sole Ownership &amp; Direct Executive Authority</span>
-                    </div>
-                    <div className="flex items-center gap-2.5 text-xs font-mono text-gray-700 dark:text-gray-300">
-                      <Building2 size={16} className="text-emerald-500 flex-shrink-0" />
-                      <span>Turnkey Civil Infrastructure Specialist</span>
-                    </div>
-                    <div className="flex items-center gap-2.5 text-xs font-mono text-gray-700 dark:text-gray-300">
-                      <Award size={16} className="text-teal-500 flex-shrink-0" />
-                      <span>RERA &amp; Municipal Diligence Authority</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Direct Executive Contact Bar */}
-                <div className="pt-8 mt-8 border-t border-gray-200 dark:border-white/10 flex items-center justify-between text-xs font-mono">
-                  <span className="text-gray-500 dark:text-gray-400">Headquarters</span>
-                  <span className="font-semibold text-gray-900 dark:text-white">Ranchi, Jharkhand</span>
-                </div>
-              </div>
-
-              {/* Right Column (7 Cols): Executive Narrative & 3 Core Commitments */}
-              <div className="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-between space-y-8">
-                <div>
-                  <h4 className="text-xs uppercase tracking-[0.25em] text-gray-500 dark:text-gray-400 font-mono font-bold mb-4">
-                    Founder&#x27;s Profile &amp; Governance Mandate
-                  </h4>
-                  <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-light leading-relaxed mb-8">
-                    Praful Kumar Sahu is the visionary founder and sole owner of Kumar Construction, leading the firm with uncompromising dedication to engineering excellence, structural integrity, and transparent project delivery. Based in Ranchi, Jharkhand, his hands-on leadership spans turnkey civil engineering, high-rise residential &amp; commercial developments, and sustainable infrastructure across the region.
+                  <p className="text-gray-600 dark:text-gray-300 font-light leading-relaxed text-sm sm:text-base">
+                    {leader.bio}
                   </p>
-
-                  <h5 className="text-xs uppercase tracking-[0.2em] text-gold dark:text-gold font-mono font-bold mb-4">
-                    Three Non-Negotiable Commitments
-                  </h5>
-
-                  {/* 3 Interactive Commitment Mini-Cards */}
-                  <div className="grid sm:grid-cols-3 gap-4">
-                    <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/[0.03] border border-gray-200/80 dark:border-white/5 hover:border-gold/40 transition-colors">
-                      <div className="text-gold font-mono text-xs font-bold mb-1">01</div>
-                      <div className="text-sm font-semibold text-gray-900 dark:text-white mb-1">Direct Oversight</div>
-                      <p className="text-xs text-gray-600 dark:text-gray-400 font-light leading-relaxed">
-                        Personal site supervision with certified third-party material testing.
-                      </p>
-                    </div>
-
-                    <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/[0.03] border border-gray-200/80 dark:border-white/5 hover:border-emerald-500/40 transition-colors">
-                      <div className="text-emerald-500 font-mono text-xs font-bold mb-1">02</div>
-                      <div className="text-sm font-semibold text-gray-900 dark:text-white mb-1">Zero Escalation</div>
-                      <p className="text-xs text-gray-600 dark:text-gray-400 font-light leading-relaxed">
-                        Itemized BOQs with milestone stage disbursements and zero surprises.
-                      </p>
-                    </div>
-
-                    <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/[0.03] border border-gray-200/80 dark:border-white/5 hover:border-teal-500/40 transition-colors">
-                      <div className="text-teal-500 font-mono text-xs font-bold mb-1">03</div>
-                      <div className="text-sm font-semibold text-gray-900 dark:text-white mb-1">Structural Rigor</div>
-                      <p className="text-xs text-gray-600 dark:text-gray-400 font-light leading-relaxed">
-                        Seismic-resilient RCC frameworks built to endure across generations.
-                      </p>
-                    </div>
-                  </div>
                 </div>
-
-                {/* Bottom Signature / Connect Row */}
-                <div className="pt-6 border-t border-gray-100 dark:border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold font-serif font-bold text-sm">
-                      KC
-                    </div>
-                    <div>
-                      <span className="block text-xs font-mono font-bold text-gray-950 dark:text-white">
-                        Executive Office of the Sole Owner
-                      </span>
-                      <span className="block text-[11px] text-gray-500 dark:text-gray-400 font-mono">
-                        Kumar Construction • Ranchi, Jharkhand
-                      </span>
-                    </div>
-                  </div>
-
-                  <a
-                    href="#/contact"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gray-950 text-white dark:bg-white dark:text-black font-mono text-xs uppercase tracking-wider font-bold hover:bg-gold dark:hover:bg-gold hover:text-black dark:hover:text-black transition-all shadow-md group cursor-pointer"
-                  >
-                    <span>Consult with Leadership</span>
-                    <ArrowRight size={14} className="transform group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
