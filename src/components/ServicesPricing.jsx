@@ -15,35 +15,45 @@ const serviceMeta = {
     category: 'Masterplanning & Civil',
     icon: Building2,
     description: 'Full-cycle strategic governance, statutory clearances, and capital structuring for large-scale township and masterplanned developments.',
-    highlights: ['Masterplan Feasibility', 'Statutory Approvals', 'Vendor Procurement']
+    cardHover: 'hover:border-amber-400/50 hover:shadow-[0_15px_35px_rgba(245,158,11,0.18)]',
+    iconBoxHover: 'group-hover:border-amber-400/70 group-hover:bg-amber-400/15 group-hover:shadow-[0_0_20px_rgba(245,158,11,0.3)]',
+    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-amber-500 dark:group-hover:text-amber-400 group-hover:fill-amber-400/60'
   },
   'feasibility-advisory': {
     index: '02',
     category: 'Due Diligence & Site Diligence',
     icon: FileCheck,
     description: 'Comprehensive geotechnical review, site diligence, municipal zoning verification, and economic viability modeling before land acquisition.',
-    highlights: ['Geotechnical Analysis', 'Zoning & RERA Review', 'Financial Modeling']
+    cardHover: 'hover:border-emerald-400/50 hover:shadow-[0_15px_35px_rgba(16,185,129,0.18)]',
+    iconBoxHover: 'group-hover:border-emerald-400/70 group-hover:bg-emerald-400/15 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]',
+    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-emerald-500 dark:group-hover:text-emerald-400 group-hover:fill-emerald-400/60'
   },
   'investment-capital': {
     index: '03',
     category: 'Capital Advisory & Syndication',
     icon: Award,
     description: 'Structuring private equity participation, institutional debt syndication, and structured financial stacks designed for commercial and high-density assets.',
-    highlights: ['Debt Syndication', 'PE Structuring', 'Escrow Governance']
+    cardHover: 'hover:border-gold/50 hover:shadow-[0_15px_35px_rgba(212,175,55,0.18)]',
+    iconBoxHover: 'group-hover:border-gold/70 group-hover:bg-gold/15 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]',
+    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-gold-dark dark:group-hover:text-gold group-hover:fill-gold/60'
   },
   'market-entry': {
     index: '04',
     category: 'Strategic Expansion',
     icon: Compass,
     description: 'Market expansion roadmaps, regional joint ventures, and municipal navigation for national builders, regional consortiums, and NRI developers.',
-    highlights: ['Joint Venture Structuring', 'Regulatory Liaising', 'Regional Market Entry']
+    cardHover: 'hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)]',
+    iconBoxHover: 'group-hover:border-sky-400/70 group-hover:bg-sky-400/15 group-hover:shadow-[0_0_20px_rgba(14,165,233,0.3)]',
+    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-sky-500 dark:group-hover:text-sky-400 group-hover:fill-sky-400/60'
   },
   'corporate-structuring': {
     index: '05',
     category: 'Governance & Legal Frameworks',
     icon: Layers,
     description: 'Special Purpose Vehicle (SPV) formation, joint development agreements (JDA), equity waterfall structuring, and statutory governance for partnerships.',
-    highlights: ['SPV Formation', 'JDA Structuring', 'Risk Mitigation']
+    cardHover: 'hover:border-purple-400/50 hover:shadow-[0_15px_35px_rgba(168,85,247,0.18)]',
+    iconBoxHover: 'group-hover:border-purple-400/70 group-hover:bg-purple-400/15 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]',
+    iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:text-purple-500 dark:group-hover:text-purple-400 group-hover:fill-purple-400/60'
   }
 };
 
@@ -88,7 +98,9 @@ export default function ServicesPricing({ onSelectService }) {
             category: 'Advisory',
             icon: Building2,
             description: 'Specialist civil and infrastructure consulting.',
-            highlights: []
+            cardHover: 'hover:border-gold/40 hover:shadow-xl',
+            iconBoxHover: 'group-hover:border-gold/60 group-hover:bg-gold/15',
+            iconColor: 'text-gray-600 dark:text-gray-400 fill-transparent group-hover:fill-gold group-hover:text-gold'
           };
           const Icon = meta.icon;
           const isLast = idx === servicesData.length - 1;
@@ -96,7 +108,7 @@ export default function ServicesPricing({ onSelectService }) {
           return (
             <div
               key={service.id}
-              className={`p-7 sm:p-9 rounded-2xl bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 shadow-sm hover:shadow-xl hover:border-gold/40 transition-all duration-300 flex flex-col justify-between group ${
+              className={`p-7 sm:p-9 rounded-2xl bg-white dark:bg-[#0D0D0D] border border-gray-200 dark:border-white/10 shadow-sm ${meta.cardHover} hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden ${
                 isLast ? 'lg:col-span-2 lg:max-w-2xl lg:mx-auto w-full' : ''
               }`}
             >
@@ -113,8 +125,14 @@ export default function ServicesPricing({ onSelectService }) {
                     </span>
                   </div>
 
-                  <div className="w-11 h-11 rounded-xl bg-gray-50 dark:bg-white/[0.04] border border-gray-200 dark:border-white/10 flex items-center justify-center text-gray-700 dark:text-gray-300 group-hover:text-gold dark:group-hover:text-gold group-hover:border-gold/30 transition-all">
-                    <Icon size={20} strokeWidth={1.8} />
+                  <div
+                    className={`w-12 h-12 rounded-2xl border border-gray-200 bg-gray-50 dark:border-white/15 dark:bg-white/[0.04] ${meta.iconBoxHover} transition-all duration-300 flex items-center justify-center shrink-0`}
+                  >
+                    <Icon
+                      size={22}
+                      strokeWidth={1.8}
+                      className={`transition-all duration-300 group-hover:scale-110 ${meta.iconColor}`}
+                    />
                   </div>
                 </div>
 
@@ -122,28 +140,17 @@ export default function ServicesPricing({ onSelectService }) {
                   {service.title}
                 </h3>
 
-                <p className="text-sm text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-5">
+                <p className="text-sm text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-6">
                   {meta.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {meta.highlights.map((h, i) => (
-                    <span
-                      key={i}
-                      className="text-[11px] font-mono text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-white/[0.03] border border-gray-200/80 dark:border-white/5 px-2.5 py-1 rounded-md"
-                    >
-                      {h}
-                    </span>
-                  ))}
-                </div>
-
                 {/* Duration Selector */}
                 <div className="mb-6">
-                  <span className="block text-[10px] font-mono uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2.5 font-bold">
-                    Engagement Term
-                  </span>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2.5 font-semibold font-mono">
+                    Engagement Duration
+                  </p>
 
-                  <div className="grid grid-cols-4 gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {durationOptions.map((dur) => {
                       const isSelected = activeDuration === dur;
                       return (
@@ -151,18 +158,14 @@ export default function ServicesPricing({ onSelectService }) {
                           key={dur}
                           type="button"
                           onClick={() => handleDurationChange(service.id, dur)}
-                          className={`py-2 px-1 text-center rounded-lg border transition-all cursor-pointer ${
+                          className={`px-3.5 py-2 rounded-xl text-xs font-medium transition-all cursor-pointer ${
                             isSelected
-                              ? 'bg-gray-950 text-white dark:bg-white dark:text-black border-gray-950 dark:border-white font-bold shadow-sm'
-                              : 'bg-gray-50 text-gray-700 border-gray-200 hover:border-gray-300 dark:bg-white/[0.03] dark:text-gray-400 dark:border-white/5 dark:hover:border-white/20'
+                              ? 'bg-emerald text-white font-bold shadow-md shadow-emerald/25 scale-[1.02]'
+                              : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-200/80 dark:bg-white/5 dark:text-gray-400 dark:hover:text-white dark:border-white/5'
                           }`}
                         >
-                          <span className="block text-[11px] font-mono leading-tight">{dur}</span>
-                          <span
-                            className={`block text-[10px] font-mono mt-0.5 ${
-                              isSelected ? 'text-gold dark:text-amber-600' : 'text-gray-500 dark:text-gray-500'
-                            }`}
-                          >
+                          <span className="block font-semibold leading-tight">{dur}</span>
+                          <span className="block text-[10px] opacity-80 font-mono mt-0.5">
                             {service.pricing[dur]}
                           </span>
                         </button>
@@ -175,8 +178,8 @@ export default function ServicesPricing({ onSelectService }) {
               {/* Footer */}
               <div className="pt-5 border-t border-gray-100 dark:border-white/5 flex items-center justify-between gap-4">
                 <div>
-                  <span className="block text-[10px] font-mono uppercase tracking-widest text-gray-500 dark:text-gray-400">
-                    Retainer Fee ({activeDuration})
+                  <span className="text-[11px] text-gray-500 dark:text-gray-400 block mb-0.5 font-mono">
+                    Fee
                   </span>
                   <span className="text-2xl sm:text-3xl font-serif font-bold text-gray-950 dark:text-white">
                     {price}
@@ -185,7 +188,7 @@ export default function ServicesPricing({ onSelectService }) {
 
                 <button
                   onClick={() => onSelectService && onSelectService(service.title, activeDuration)}
-                  className="px-5 py-2.5 rounded-xl bg-gold hover:bg-gold-light text-black font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-md flex items-center gap-2 group/btn cursor-pointer shrink-0"
+                  className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-xs uppercase tracking-widest font-bold text-black bg-gold hover:bg-gold-light shadow-lg shadow-gold/20 transition-all inline-flex items-center justify-center gap-2 shrink-0 cursor-pointer group/btn"
                 >
                   <span>Select Service</span>
                   <ArrowRight size={13} className="transform group-hover/btn:translate-x-1 transition-transform" />
