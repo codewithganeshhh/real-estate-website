@@ -49,7 +49,7 @@ export default function AdvisoryPillars({ onLearnMore }) {
       <div className="max-w-[1280px] mx-auto">
         {/* Colorful yet light & soft editorial headline */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif leading-[1.28] text-gray-700 dark:text-gray-300 mb-10 md:mb-16 max-w-5xl font-light">
-          <span className="text-gray-950 dark:text-white font-semibold">Kumar Construction</span> delivers{' '}
+          <span className="text-gray-950 dark:text-white font-semibold">Kumar Developers</span> delivers{' '}
           <span className="text-emerald-500 dark:text-emerald-400 font-medium">turnkey engineering</span>,{' '}
           <span className="text-amber-500 dark:text-amber-300 font-medium">specialist advisory</span>, and{' '}
           <span className="text-teal-500 dark:text-teal-300 font-medium">technical consultation</span> for landmark infrastructure development projects.

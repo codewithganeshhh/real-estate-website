@@ -138,7 +138,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
                 Navigation
               </span>
               <span className="text-[10px] text-emerald font-mono">
-                Kumar Construction
+                Kumar Developers
               </span>
             </div>
 
@@ -173,7 +173,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
                 Call Desk
               </a>
               <a
-                href="https://wa.me/919071279996"
+                href="https://wa.me/919308990907"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-3 px-4 rounded-xl bg-emerald/15 border border-emerald/30 text-xs text-center text-emerald font-semibold hover:bg-emerald/25 transition-colors"

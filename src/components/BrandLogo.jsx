@@ -57,7 +57,7 @@ export default function BrandLogo({ size = "default", showSubtitle = true, light
           className={`font-serif font-bold ${titleText} tracking-wider sm:tracking-widest leading-none`}
           style={{ color: '#D4AF37' }}
         >
-          KUMAR CONSTRUCTION
+          KUMAR DEVELOPERS
         </span>
         {showSubtitle && (
           <span

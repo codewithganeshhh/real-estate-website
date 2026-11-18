@@ -83,7 +83,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop"
-            alt="Services - Kumar Construction"
+            alt="Services - Kumar Developers"
             className="w-full h-full object-cover animate-hero-zoom-out"
           />
           <div className="absolute inset-0 bg-black/45 z-10" />

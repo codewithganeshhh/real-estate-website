@@ -50,9 +50,9 @@ export default function ContactPage() {
 
   const handleWhatsApp = () => {
     const text = encodeURIComponent(
-      `Hello Kumar Construction Team, I would like to inquire about ${formData.serviceType}.`
+      `Hello Kumar Developers Team, I would like to inquire about ${formData.serviceType}.`
     );
-    window.open(`https://wa.me/919071279996?text=${text}`, '_blank');
+    window.open(`https://wa.me/919308990907?text=${text}`, '_blank');
   };
 
   return (
@@ -63,7 +63,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
-            alt="Contact - Kumar Construction"
+            alt="Contact - Kumar Developers"
             className="w-full h-full object-cover animate-hero-zoom-out"
           />
           {/* Crisp, rich contrast overlays - pure dark cinematic gradient without washed-out white fog */}
@@ -99,7 +99,7 @@ export default function ContactPage() {
                   Inquiry Successfully Received
                 </h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300 font-light max-w-md mx-auto leading-relaxed">
-                  Thank you, <strong className="text-gray-950 dark:text-white">{formData.name}</strong>. An executive partner from Kumar Construction will review your requirements for <strong className="text-gold-dark dark:text-gold">{formData.serviceType}</strong> and reach out within 24 hours.
+                  Thank you, <strong className="text-gray-950 dark:text-white">{formData.name}</strong>. An executive partner from Kumar Developers will review your requirements for <strong className="text-gold-dark dark:text-gold">{formData.serviceType}</strong> and reach out within 24 hours.
                 </p>
                 <div className="pt-4">
                   <button
@@ -215,7 +215,7 @@ export default function ContactPage() {
                     <>
                       <Send size={15} className="shrink-0 transition-transform group-hover:translate-x-0.5" />
                       <span className="sm:hidden">Send Inquiry</span>
-                      <span className="hidden sm:inline">Submit Inquiry to Kumar Construction</span>
+                      <span className="hidden sm:inline">Submit Inquiry to Kumar Developers</span>
                     </>
                   )}
                 </button>
@@ -347,7 +347,7 @@ export default function ContactPage() {
         {/* Embedded Map Frame */}
         <div className="relative w-full h-[320px] sm:h-[450px] md:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden border border-gray-200 dark:border-white/15 shadow-xl bg-gray-100 dark:bg-[#111]">
           <iframe
-            title="Kumar Construction Ranchi Head Office Map"
+            title="Kumar Developers Ranchi Head Office Map"
             src="https://maps.google.com/maps?q=Ratu%20Road%20Chowk,%20Ranchi,%20Jharkhand,%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
@@ -363,7 +363,7 @@ export default function ContactPage() {
             <div className="flex items-center gap-2 mb-1">
               <div className="w-2 h-2 rounded-full bg-gold" />
               <span className="text-[10px] font-mono uppercase tracking-widest text-gold-dark dark:text-gold font-bold">
-                Kumar Construction
+                Kumar Developers
               </span>
             </div>
             <p className="text-xs text-gray-950 dark:text-white font-medium mb-1">

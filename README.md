@@ -1,6 +1,6 @@
-# Kumar Construction — Luxury Real Estate & Infrastructure Advisory Portal
+# Kumar Developers — Luxury Real Estate & Infrastructure Advisory Portal
 
-A clean, high-performance, ultra-luxury multi-page **React (React Router v6) + Tailwind CSS** application created for **Kumar Construction**.
+A clean, high-performance, ultra-luxury multi-page **React (React Router v6) + Tailwind CSS** application created for **Kumar Developers**.
 
 ---
 

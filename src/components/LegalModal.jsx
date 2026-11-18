@@ -21,7 +21,7 @@ export default function LegalModal({ policyKey, onClose }) {
         <div className="flex items-center gap-2 mb-3">
           <ShieldCheck size={18} className="text-gold-dark dark:text-gold" />
           <span className="text-[10px] uppercase tracking-widest text-gold-dark dark:text-gold font-bold font-mono">
-            Kumar Construction Governance
+            Kumar Developers Governance
           </span>
         </div>
 

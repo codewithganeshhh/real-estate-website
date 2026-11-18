@@ -12,7 +12,7 @@ export default function ProjectsPage() {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
-            alt="Portfolio - Kumar Construction"
+            alt="Portfolio - Kumar Developers"
             className="w-full h-full object-cover animate-hero-zoom-out"
           />
           {/* Crisp, rich contrast overlays - pure dark cinematic gradient without washed-out white fog */}

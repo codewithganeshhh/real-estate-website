@@ -8,12 +8,12 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "Does Kumar Construction take on turnkey projects outside Ranchi across Jharkhand?",
+      question: "Does Kumar Developers take on turnkey projects outside Ranchi across Jharkhand?",
       answer: "Yes, absolutely. While our corporate headquarters is based in Ranchi at 301, Prathna Heights, Ratu Road Chowk, our engineering operations span the entire state of Jharkhand — including Jamshedpur, Bokaro Steel City, Dhanbad, Ramgarh, and Hazaribagh. We execute turnkey commercial business plazas, luxury residential towers, and heavy industrial logistics corridors, alongside masterplanning advisory for select interstate infrastructure developments."
     },
     {
       question: "What is the payment structure and milestone schedule for projects?",
-      answer: "Kumar Construction operates on a 100% transparent, milestone-linked escrow payment framework. Payments are strictly mapped to verified construction stages — such as Geotechnical Testing & Foundation, Ground-Floor RCC Casting, Superstructure Slab Handover, Brickwork & MEP Rough-Ins, and Final Handover. Clients release subsequent funds only after on-site milestone delivery and third-party NABL lab quality clearance."
+      answer: "Kumar Developers operates on a 100% transparent, milestone-linked escrow payment framework. Payments are strictly mapped to verified construction stages — such as Geotechnical Testing & Foundation, Ground-Floor RCC Casting, Superstructure Slab Handover, Brickwork & MEP Rough-Ins, and Final Handover. Clients release subsequent funds only after on-site milestone delivery and third-party NABL lab quality clearance."
     },
     {
       question: "How do clients receive on-site progress updates and material testing reports?",
@@ -21,11 +21,11 @@ export default function FAQSection() {
     },
     {
       question: "Is there post-handover structural maintenance and warranty support provided?",
-      answer: "Yes. Every turnkey project delivered by Kumar Construction includes comprehensive structural stability certification, waterproofing warranties, and a post-handover defect liability maintenance contract. Over the initial 12 to 24 months, our civil engineering maintenance cell conducts periodic structural audits and preventive inspections to ensure enduring structural longevity."
+      answer: "Yes. Every turnkey project delivered by Kumar Developers includes comprehensive structural stability certification, waterproofing warranties, and a post-handover defect liability maintenance contract. Over the initial 12 to 24 months, our civil engineering maintenance cell conducts periodic structural audits and preventive inspections to ensure enduring structural longevity."
     },
     {
       question: "How can we schedule a site visit or preliminary development consultation?",
-      answer: "You can schedule an in-person meeting at our Ranchi corporate headquarters (301, Prathna Heights, Ratu Road Chowk) or book an on-site geotechnical and development feasibility inspection. To connect directly with Founder & Managing Director Praful Kumar Sahu's executive desk, reach our phone desk at +91 90712 79996 or submit an inquiry through our Contact page."
+      answer: "You can schedule an in-person meeting at our Ranchi corporate headquarters (301, Prathna Heights, Ratu Road Chowk) or book an on-site geotechnical and development feasibility inspection. To connect directly with Founder & Managing Director Praful Kumar Sahu's executive desk, reach our phone desk at +91 93089 90907 or submit an inquiry through our Contact page."
     }
   ];
 

@@ -46,7 +46,7 @@ export default function ContactSection({ prefillData }) {
                 Inquiry Received
               </h3>
               <p className="text-sm text-gray-300 font-light leading-relaxed">
-                Thank you for reaching out to Kumar Construction. Our team will review your message and respond shortly.
+                Thank you for reaching out to Kumar Developers. Our team will review your message and respond shortly.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
@@ -146,7 +146,7 @@ export default function ContactSection({ prefillData }) {
         <div className="space-y-8 flex flex-col justify-between py-4">
           <div className="space-y-6">
             <h3 className="text-2xl font-serif text-white">
-              Kumar Construction
+              Kumar Developers
             </h3>
             
             <div className="space-y-4 text-sm text-gray-300 font-light">
@@ -173,7 +173,7 @@ export default function ContactSection({ prefillData }) {
 
           <div className="p-6 rounded-xl bg-white/[0.02] border border-white/5 text-xs text-gray-400">
             <p className="font-semibold text-gray-300 mb-1">Corporate Registration</p>
-            <p>Kumar Construction • Registered under the Ministry of Corporate Affairs, India.</p>
+            <p>Kumar Developers • Registered under the Ministry of Corporate Affairs, India.</p>
           </div>
         </div>
       </div>

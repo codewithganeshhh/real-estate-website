@@ -77,7 +77,7 @@ export default function Footer({ onOpenPolicy }) {
               <BrandLogo size="default" />
 
               <p className="text-gray-600 dark:text-gray-400 font-light text-xs sm:text-sm leading-relaxed max-w-md">
-                Kumar Construction is a premier turnkey civil engineering and infrastructure development firm. Guided by structural precision, transparent milestone accounting, and institutional engineering benchmarks.
+                Kumar Developers is a premier turnkey civil engineering and infrastructure development firm. Guided by structural precision, transparent milestone accounting, and institutional engineering benchmarks.
               </p>
 
               {/* Founder & Leadership Badge */}
@@ -96,7 +96,7 @@ export default function Footer({ onOpenPolicy }) {
               {/* Quick WhatsApp Connect Pill */}
               <div className="pt-1">
                 <a
-                  href="https://wa.me/919071279996"
+                  href="https://wa.me/919308990907"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-emerald/10 border border-emerald/30 text-emerald-700 dark:text-emerald text-xs font-semibold hover:bg-emerald/20 transition-all font-mono"
@@ -199,7 +199,7 @@ export default function Footer({ onOpenPolicy }) {
           {/* Bottom Bar: Copyright & Policies */}
           <div className="pt-8 border-t border-gray-200 dark:border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500 dark:text-gray-400 text-center md:text-left">
             <div>
-              <p>© 2026 Kumar Construction. All rights reserved.</p>
+              <p>© 2026 Kumar Developers. All rights reserved.</p>
               <p className="text-[11px] text-gray-400 dark:text-gray-500 mt-0.5">
                 Headquartered in Ranchi, Jharkhand. Jurisdiction: Ranchi.
               </p>

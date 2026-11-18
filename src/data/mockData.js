@@ -1,18 +1,18 @@
 export const companyInfo = {
-  name: "Kumar Construction",
+  name: "Kumar Developers",
   tagline: "Building Future-Ready Infrastructure. Creating Enduring Value.",
   established: 2026,
   owner: "Praful Kumar Sahu",
   location: "Ranchi, Jharkhand",
   address: "301, Prathna Heights, Ratu Road Chowk, Ranchi, Jharkhand – 834001",
   headOffice: "301, Prathna Heights, Ratu Road Chowk, Ranchi, Jharkhand – 834001",
-  phone: "+91 90712 79996",
-  email: "enquiries@kumarconstruction.in",
+  phone: "+91 93089 90907",
+  email: "enquiries@kumardevelopers.in",
   workingHours: "Mon - Sat: 9:00 AM - 6:30 PM IST",
   socials: {
-    linkedin: "https://www.linkedin.com/company/kumarconstruction",
-    instagram: "https://www.instagram.com/kumarconstruction",
-    twitter: "https://twitter.com/kumarconstruction"
+    linkedin: "https://www.linkedin.com/company/kumardevelopers",
+    instagram: "https://www.instagram.com/kumardevelopers",
+    twitter: "https://twitter.com/kumardevelopers"
   }
 };
 
@@ -187,12 +187,12 @@ export const projectsData = [
     title: "Prathna Heights Corporate Hub",
     category: "Corporate Hub",
     stage: "Operational Headquarters",
-    client: "Kumar Construction Corporate HQ",
+    client: "Kumar Developers Corporate HQ",
     location: "Ratu Road Chowk, Ranchi, Jharkhand",
     scale: "75,000 Sq. Ft.",
     isFlagship: true,
     tagline: "Official corporate headquarters and premium executive commercial suites at Ratu Road Chowk, Ranchi.",
-    description: "The official headquarters of Kumar Construction, Prathna Heights is an architectural beacon at Ratu Road Chowk. Featuring contemporary granite & energy-efficient glass facades, high-speed access control, and state-of-the-art engineering boardrooms.",
+    description: "The official headquarters of Kumar Developers, Prathna Heights is an architectural beacon at Ratu Road Chowk. Featuring contemporary granite & energy-efficient glass facades, high-speed access control, and state-of-the-art engineering boardrooms.",
     heroImage: "/projects/prathna-heights.jpg",
     gallery: [
       "/projects/prathna-heights.jpg",
@@ -200,7 +200,7 @@ export const projectsData = [
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
     ],
     features: [
-      "Kumar Construction Corporate HQ",
+      "Kumar Developers Corporate HQ",
       "Granite & Solar-Control Glass",
       "Ratu Road Chowk Landmark",
       "Executive Boardrooms & Suites"
@@ -265,7 +265,7 @@ export const leadershipData = [
   {
     name: "Praful Kumar Sahu",
     role: "Founder & Managing Director",
-    bio: "Praful Kumar Sahu is the visionary founder and sole owner of Kumar Construction, leading the firm with uncompromising dedication to engineering excellence, structural integrity, and transparent project delivery. Based in Ranchi, Jharkhand, his hands-on leadership spans turnkey civil engineering, high-rise residential & commercial developments, and sustainable infrastructure across the region.",
+    bio: "Praful Kumar Sahu is the visionary founder and sole owner of Kumar Developers, leading the firm with uncompromising dedication to engineering excellence, structural integrity, and transparent project delivery. Based in Ranchi, Jharkhand, his hands-on leadership spans turnkey civil engineering, high-rise residential & commercial developments, and sustainable infrastructure across the region.",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop",
     credentials: ["Founder & Sole Owner", "Turnkey Civil Infrastructure Specialist", "RERA & Municipal Diligence Lead"]
   }
@@ -278,7 +278,7 @@ export const testimonialsData = [
     role: "Managing Director",
     company: "Sahay Commercial Hub",
     location: "Ranchi, Jharkhand",
-    quote: "Kumar Construction has set a new benchmark in Ranchi. Their turnkey execution of our commercial facility near Ratu Road was delivered ahead of schedule with institutional-grade structural finishing. Praful Kumar Sahu's direct oversight and transparent milestone reporting made all the difference.",
+    quote: "Kumar Developers has set a new benchmark in Ranchi. Their turnkey execution of our commercial facility near Ratu Road was delivered ahead of schedule with institutional-grade structural finishing. Praful Kumar Sahu's direct oversight and transparent milestone reporting made all the difference.",
     rating: 5
   },
   {
@@ -296,7 +296,7 @@ export const testimonialsData = [
     role: "Chairman & Managing Director",
     company: "Singh Heavy Logistics & Warehousing",
     location: "Jamshedpur, Jharkhand",
-    quote: "For our multi-acre logistics facility in Jharkhand, Kumar Construction provided immaculate geotechnical diligence, earthquake-resistant framing, and heavy-duty industrial flooring. Their engineering precision, safety protocols, and integrity are exemplary.",
+    quote: "For our multi-acre logistics facility in Jharkhand, Kumar Developers provided immaculate geotechnical diligence, earthquake-resistant framing, and heavy-duty industrial flooring. Their engineering precision, safety protocols, and integrity are exemplary.",
     rating: 5
   },
   {
@@ -305,7 +305,7 @@ export const testimonialsData = [
     role: "Early Investor & Mansion Owner",
     company: "Nirvana Valley Township",
     location: "Nilambur, Kerala",
-    quote: "Investing in a 200-acre golf estate like Nirvana Valley required an infrastructure team with global standards. Kumar Construction's masterplanning advisory, environmental compliance, and turnkey execution transformed our vision into an architectural masterpiece.",
+    quote: "Investing in a 200-acre golf estate like Nirvana Valley required an infrastructure team with global standards. Kumar Developers's masterplanning advisory, environmental compliance, and turnkey execution transformed our vision into an architectural masterpiece.",
     rating: 5
   },
   {
@@ -314,7 +314,7 @@ export const testimonialsData = [
     role: "Director",
     company: "Agarwal Greens & Urban Living",
     location: "Bokaro Steel City, Jharkhand",
-    quote: "Collaborating with Kumar Construction on high-rise residential engineering in Jharkhand was completely seamless. Their strict adherence to RERA compliance, RCC structural safety standards, and timely handover is second to none.",
+    quote: "Collaborating with Kumar Developers on high-rise residential engineering in Jharkhand was completely seamless. Their strict adherence to RERA compliance, RCC structural safety standards, and timely handover is second to none.",
     rating: 5
   }
 ];
@@ -322,11 +322,11 @@ export const testimonialsData = [
 export const legalPolicies = {
   privacy: {
     title: "Privacy Policy",
-    content: `Kumar Construction is committed to protecting your privacy. This policy outlines how we handle personal information collected through our website.\n\n1. Information Collection: We only collect personal details necessary to provide construction, consultation, and advisory services.\n\n2. Confidentiality: Project details and client communications are treated with strict confidentiality under non-disclosure obligations.\n\n3. Contact: For privacy questions, reach us at enquiries@kumarconstruction.in.`
+    content: `Kumar Developers is committed to protecting your privacy. This policy outlines how we handle personal information collected through our website.\n\n1. Information Collection: We only collect personal details necessary to provide construction, consultation, and advisory services.\n\n2. Confidentiality: Project details and client communications are treated with strict confidentiality under non-disclosure obligations.\n\n3. Contact: For privacy questions, reach us at enquiries@kumardevelopers.in.`
   },
   terms: {
     title: "Terms & Conditions",
-    content: `By accessing this website, you agree to these Terms and Conditions.\n\n1. Advisory Nature: All content, case studies, and visuals are for general informational purposes and showcase Kumar Construction's engineering capabilities.\n\n2. Intellectual Property: Content and logos are the property of Kumar Construction.\n\n3. Jurisdiction: Governed by the laws of India with jurisdiction in Ranchi, Jharkhand.`
+    content: `By accessing this website, you agree to these Terms and Conditions.\n\n1. Advisory Nature: All content, case studies, and visuals are for general informational purposes and showcase Kumar Developers's engineering capabilities.\n\n2. Intellectual Property: Content and logos are the property of Kumar Developers.\n\n3. Jurisdiction: Governed by the laws of India with jurisdiction in Ranchi, Jharkhand.`
   },
   refund: {
     title: "Refund Policy",

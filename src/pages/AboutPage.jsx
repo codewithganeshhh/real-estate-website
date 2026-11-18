@@ -90,7 +90,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
-            alt="The Firm - Kumar Construction"
+            alt="The Firm - Kumar Developers"
             className="w-full h-full object-cover animate-hero-zoom-out"
           />
           {/* Crisp, rich contrast overlays - pure dark cinematic gradient without washed-out white fog */}
@@ -136,7 +136,7 @@ export default function AboutPage() {
                 OUR ORIGINS
               </h3>
               <p className="leading-relaxed">
-                Established in 2026, <strong className="text-gray-950 dark:text-white font-medium">Kumar Construction</strong> is headquartered in Ranchi, Jharkhand at 301, Prathna Heights, Ratu Road Chowk. Founded by sole owner and Managing Director <strong className="text-gray-950 dark:text-white font-medium">Praful Kumar Sahu</strong>, we operate with a singular focus: <span className="text-gray-950 dark:text-white font-medium">value creation</span>. We are a specialist infrastructure and turnkey civil engineering firm, guiding clients through every stage of development — from concept to completion.
+                Established in 2026, <strong className="text-gray-950 dark:text-white font-medium">Kumar Developers</strong> is headquartered in Ranchi, Jharkhand at 301, Prathna Heights, Ratu Road Chowk. Founded by sole owner and Managing Director <strong className="text-gray-950 dark:text-white font-medium">Praful Kumar Sahu</strong>, we operate with a singular focus: <span className="text-gray-950 dark:text-white font-medium">value creation</span>. We are a specialist infrastructure and turnkey civil engineering firm, guiding clients through every stage of development — from concept to completion.
               </p>
             </div>
 
