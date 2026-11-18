@@ -1,7 +1,7 @@
 export const companyInfo = {
   name: "Kumar Developers",
   tagline: "Building Future-Ready Infrastructure. Creating Enduring Value.",
-  established: 2026,
+  established: 2021,
   owner: "Praful Kumar Sahu",
   location: "Ranchi, Jharkhand",
   address: "301, Prathna Heights, Ratu Road Chowk, Ranchi, Jharkhand – 834001",

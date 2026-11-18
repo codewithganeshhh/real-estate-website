@@ -39,7 +39,7 @@ export default function HeroSection() {
       <div className="relative z-20 max-w-[1400px] mx-auto px-4 sm:px-6 text-center">
         {/* Established Tag */}
         <p className="text-emerald-400 dark:text-[#4ADE80] uppercase tracking-[0.3em] sm:tracking-[0.4em] text-[11px] sm:text-sm mb-4 sm:mb-6 font-extrabold drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
-          ESTD. 2026 • Ranchi
+          ESTD. 2021 • Ranchi
         </p>
 
         {/* Majestic Headline */}
